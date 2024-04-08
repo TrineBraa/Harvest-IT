@@ -6,5 +6,5 @@ function mainPageView() {
    <button id="Berries" onclick="clickBerriesf"()>Berries</button>
    <button id="Mushrooms" onclick="clickMushroomsf"()>Mushrooms</button>
    <button id="Fish" onclick="ClickFishf"()>Fish</button> 
-   <button id="Register New Find" onclick="registerNewFind"()>Register New Find</button>  `
+   <button id="Register New Find" onclick="registerNewFind"()>Register New Find</button>  `;
 }
