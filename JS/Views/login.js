@@ -9,13 +9,13 @@ function logInView(){
     <br/>
     <br/>
     <div id="logInInputContainer">
-    <input class="loginInput" type="email" id="emailInput" placeholder="E-mail"/>
+    <input class="loginInput" type="text" id="emailInput" placeholder="E-mail" required/>
     <br/>
-    <input class="loginInput" type="text" id="passwordInput" placeholder="Password"/>
+    <input class="loginInput" type="text" id="passwordInput" placeholder="Password" required>
     </div>
     <br/>
     <br/>
-    <button class="loginButton" onclick="logIn(input)">Log In</button>
+    <button class="loginButton" onclick="logIn(id, input)">Log In</button>
     <br/>
     <button class="loginButton" onclick="newUserView()">Register New User</button>
     <br/>
