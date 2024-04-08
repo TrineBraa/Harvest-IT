@@ -5,18 +5,32 @@ function logInView(){
     document.getElementById("app").innerHTML= /*HTML*/ `
     <h1>Harvest IT</h1>
     <br/>
-    <img/>
+    <img src="/Emne 2/HarvestIT/Harvest IT/Images/mushroomlogo.png">
     <br/>
     <br/>
     <div id="logInInputContainer">
-    <input/>
+    <input class="loginInput" type="email" id="emailInput" placeholder="E-mail"/>
     <br/>
-    <input/>
+    <input class="loginInput" type="text" id="passwordInput" placeholder="Password"/>
     </div>
     <br/>
     <br/>
-    <button>Log In</button>
-    <button>Register New User</button>
+    <button class="loginButton" onclick="logIn(input)">Log In</button>
     <br/>
+    <button class="loginButton" onclick="newUserView()">Register New User</button>
+    <br/>
+    `;
+}
+
+function newUserView () {
+    document.getElementById('app').innerHTML = /*HTML*/ `
+    <h1>Harvest IT</h1>
+
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="E-mail">
+    <input type="text" placeholder="Password">
+
+    <button onclick="registerUser()">Register</button>
+    <button onclick="logInView()">Back to Login</button>
     `;
 }
