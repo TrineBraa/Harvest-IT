@@ -10,8 +10,8 @@ function mainPageView() {
     </div>
     <div class="user-cards">
     <div class="card">
-    <div class="header">Navn</div>
-    <div class="body">Email/Informasjon</div>
+    <div class="header">Name</div>
+    <div class="body">Email/Information</div>
     <br/>
     <img id="mushroomLogin" src="./Images/mushroomlogo.png">
     </div>

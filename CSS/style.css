@@ -113,8 +113,10 @@ color: darkgreen;
 
 
 #Berries{
+    position: absolute;
+    right: 37%;
+    top: 60%;
     margin-left: 30px;
-    margin-top: 5px;
     border-radius: 25%;
     height: 40px;
     width: 120px;
@@ -126,6 +128,9 @@ color: darkgreen;
     cursor: pointer;
 }
 #Mushrooms{
+    position: absolute;
+    right: 47%;
+    top: 60%;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
@@ -140,6 +145,9 @@ color: darkgreen;
     
 
 #Fish{
+    position: absolute;
+    right: 57%;
+    top: 60%;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
@@ -153,12 +161,15 @@ color: darkgreen;
 }
 
 #RegisterNewFind{
+    position: absolute;
+    right: 46%;
+    top: 70%;
     margin-left: 145px;
     margin-top: 5px;
     border-radius: 25%;
     height: 50px;
     width: 150px;
-    background-color: blueviolet;
+    background-color: darkslategray;
     color: yellow;
     font-weight: bold;
     font-family: Serif;
