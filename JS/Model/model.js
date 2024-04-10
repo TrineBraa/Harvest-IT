@@ -3,7 +3,7 @@ const model = {
         loggedInUser: null,
         darkMode: false,
         lang: 'no',
-        currentPage: 'mainPage',
+        currentPage: 'loginPage',
         page: [
             'loginPage',
             'mainPage',
@@ -26,10 +26,11 @@ const model = {
             searchBar: '',
         },
         registerUser: {
-            userInputName: '',
-            userInputAddress: '',
-            userInputPassword: '',
-            userInputEmail: '',
+            id: '',
+            email: '',
+            password: '',
+            friends: [],
+            profilePic: '',
         },
         registerSighting: {
             nameInput: '',
