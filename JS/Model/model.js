@@ -43,28 +43,28 @@ const model = {
         users: [
             { 
                 id: 'Linn',
-                epost: 'linn@gmail.com',
+                email: 'linn@gmail.com',
                 Password: 'Linn',
                 friends: ['Trine', 'Audun S', 'Even'],
                 profilePic: '',
             },
             { 
                 id: 'Trine',
-                epost: 'trine@gmail.com',
+                email: 'trine@gmail.com',
                 Password: 'Trine',
                 friends: [],
                 profilePic: '', 
             },
             { 
                 id: 'Audun S', 
-                epost: 'audunS@gmail.com',
+                email: 'audunS@gmail.com',
                 Password: 'Audun S',
                 friends: [],
                 profilePic: '',
             },
             { 
                 id: 'Even', 
-                epost: 'even@gmail.com',
+                email: 'even@gmail.com',
                 Password: 'Even',
                 friends: [],
                 profilePic: '',
