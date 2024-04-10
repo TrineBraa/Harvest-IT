@@ -35,7 +35,7 @@ const model = {
             locationInput: '',
             imageInput: '',
         },
-        findingsPage: {
+        findingsPage: { 
             locationBar: '',
         },
     },
