@@ -18,9 +18,10 @@ const model = {
         loginInputs: {
             email: '',
             password: '',
+            errorMsg: '',
         },
         startPage: {
-            searchBar: 'Kantarell i Larvik',
+            searchBar: '',
         },
         registerUser: {
             userInputName: '',
@@ -29,9 +30,9 @@ const model = {
             userInputEmail: '',
         },
         registerSighting: {
-            nameInput: 'blåbær',
-            lastHarvestInput: '2024-10-22',
-            locationInput: 'blåbærskogen i Tønsberg',
+            nameInput: '',
+            lastHarvestInput: '',
+            locationInput: '',
             imageInput: '',
         },
         findingsPage: {
@@ -63,7 +64,7 @@ const model = {
             },
             { 
                 id: 'Even', 
-                epost: 'evan@gmail.com',
+                epost: 'even@gmail.com',
                 Password: 'Even',
                 friends: [],
                 profilePic: '',
