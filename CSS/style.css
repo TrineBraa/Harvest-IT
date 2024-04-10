@@ -62,3 +62,65 @@
     font-size: small;
     text-align: center;
 }
+#searchbar {
+    width: 250px;
+    color: black;
+}
+.search-wrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+#Profile{
+    margin-top: 5px;
+    margin-left: 375px;
+    height: 60px;
+    width: 75px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#input{
+    font-size: 1rem;
+}
+.user-cards {
+    display:flex;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+    justify-content: center;
+    font-size: 3rem;
+}
+.card {
+    border: 1px solid black;
+    background-color: white;
+    padding: .5rem;
+    font-size: 3rem;
+}
+.card > .header {
+    margin-bottom: .25rem;
+}
+.card > .body {
+font-size: .8rem;
+
+}
+.hide {
+    display: none;
+}
+
+
+#Berries{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#Mushrooms{
+    margin-left: 10px;
+}
+#Fish{
+    margin-left: 10px;
+}
+#RegisterNewFind{
+    margin-left: 82px;
+    margin-top: 5px;
+}
