@@ -1,5 +1,3 @@
-logInView();
-
 function logInView(){
     document.getElementById("app").innerHTML= /*HTML*/ `
     <div id="loginScreen">
@@ -11,7 +9,7 @@ function logInView(){
         <div id="logInInputContainer">
         <input class="loginInput" type="text" oninput="model.inputs.loginInputs.email=this.value" value="${model.inputs.loginInputs.email ?? ''}" placeholder="E-mail" required/>
         <br/>
-        <input class="loginInput" type="text" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" placeholder="Password" required>
+        <input class="loginInput" type="password" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" placeholder="Password" required>
         <br/>
         <span class="errorLoggin">${model.inputs.loginInputs.errorMsg}</span>
         </div>

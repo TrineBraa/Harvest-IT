@@ -1,26 +1,36 @@
 function logIn(){  //Har ikke funnet ut hvordan denne burde utformes for å gjenkjenne epost og passord til brukere.
-    let email = findUser();
+    let user = findUser();
+
     const login = model.inputs.loginInputs; 
 
-    if(email == null) {
+    console.log("Email: " + model.inputs.loginInputs.email)
+    console.log("Password: " + model.inputs.loginInputs.password)
+
+    if (!user){ // hvis vi ikke finner en bruker
         login.errorMsg = 'Feil brukernavn og/eller passord';
         logInView();
-    } else {
-        model.app.page = 'mainPage';
-        model.app.loggedInUser = email;
-        loginInputs.errorMsg = null;
-        loginInputs.email = null;
-        loginInputs.password = null;
-        mainPageView();
+        return
     }
+
+    model.app.currentPage = 'mainPage';
+    model.app.loggedInUser = user.id;
+    logIn.errorMsg = null;
+    login.email = null;
+    login.password = null;
+    updateView();
 }
 
 function findUser(){
-    for (let user of model.data.users) {
-        if (user.email == model.inputs.loginInputs.email && 
-            user.password == model.inputs.loginInputs.password) {
-                return user.email;
-        }
-        return null;
-    }
+    return model.data.users.find(user => user.email === model.inputs.loginInputs.email && user.password === model.inputs.loginInputs.password)
 }
+
+// function findUser(){
+//     for (let user of model.data.users) {
+//         if (user.email == model.inputs.loginInputs.email) {
+//             if(user.password == model.inputs.loginInputs.password){
+//                 return user;
+//             }
+//         }
+//         return null;
+//     }
+// }

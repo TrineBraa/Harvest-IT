@@ -1,11 +1,13 @@
 const model = {
     app: {
-        loggedInUser: '',
+        loggedInUser: null,
         darkMode: false,
         lang: 'no',
+        currentPage: 'loginPage',
         page: [
             'loginPage',
             'mainPage',
+            'registerUserPage',
             'registerFindingsPage',
             'profilePage',
             'findingsPage', // siden hvor man ser info om bær/sopp/fisk (slide 6)
