@@ -8,6 +8,10 @@ function logIn(){  //Har ikke funnet ut hvordan denne burde utformes for å gjen
 
     if (!user){ // hvis vi ikke finner en bruker
         login.errorMsg = 'Feil brukernavn og/eller passord';
+
+        if(!login.email || !login.password)
+            login.errorMsg = 'Feltene kan ikke være tomme';
+        
         logInView();
         return
     }
