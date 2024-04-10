@@ -1,4 +1,4 @@
-mainPageView()
+
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     <input type="text" id="searchbar" placeholder="Search in users, berries, mushrooms">

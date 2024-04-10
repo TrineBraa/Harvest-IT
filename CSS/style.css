@@ -1,16 +1,30 @@
-*{
-    background-color: rgb(183, 183, 183);
+* {
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.loginButton{
+#loginScreen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginButton {
     height: 25px;
     width: 150px;
     margin: 5px;
     border-radius: 20px;
 }
 
-.loginInput{
+.loginInput {
     height: 20px;
     width: 300px;
     margin: 4px;
+}
+
+#mushroomLogin {
+    width: 250px;
+    height: 250px;
+    
 }
