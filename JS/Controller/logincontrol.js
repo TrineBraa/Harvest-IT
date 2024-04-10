@@ -11,7 +11,7 @@ function logIn(){  //Har ikke funnet ut hvordan denne burde utformes for å gjen
 
         if(!login.email || !login.password)
             login.errorMsg = 'Feltene kan ikke være tomme';
-        
+
         logInView();
         return
     }
