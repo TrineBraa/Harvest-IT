@@ -74,8 +74,8 @@
 }
 
 #Profile{
-    margin-top: 5px;
-    margin-left: 375px;
+    margin-top: -5px;
+    margin-left: 50px;
     height: 60px;
     width: 75px;
     border-radius: 50%;
@@ -83,6 +83,7 @@
 }
 #input{
     font-size: 1rem;
+    float:left;
 }
 .user-cards {
     display:flex;
@@ -103,6 +104,7 @@
 }
 .card > .body {
 font-size: .8rem;
+color: darkgreen;
 
 }
 .hide {
@@ -113,14 +115,53 @@ font-size: .8rem;
 #Berries{
     margin-left: 30px;
     margin-top: 5px;
+    border-radius: 25%;
+    height: 40px;
+    width: 120px;
+    background-color: lightcoral;
+    color: purple;
+    font-weight: bold;
+    font-family: Serif;
+    font-size: large;
+    cursor: pointer;
 }
 #Mushrooms{
     margin-left: 10px;
+    border-radius: 25%;
+    height: 40px;
+    width: 120px;
+    background-color: darkred;
+    color:rgb(7, 221, 7);
+    font-weight: bold;
+    font-family: Serif;
+    font-size: large;
+    cursor: pointer;
 }
+    
+
 #Fish{
     margin-left: 10px;
+    border-radius: 25%;
+    height: 40px;
+    width: 120px;
+    background-color: teal;
+    color: orange;
+    font-weight: bold;
+    font-family: Serif;
+    font-size: large;
+    cursor: pointer;
 }
+
 #RegisterNewFind{
-    margin-left: 82px;
+    margin-left: 145px;
     margin-top: 5px;
+    border-radius: 25%;
+    height: 50px;
+    width: 150px;
+    background-color: blueviolet;
+    color: yellow;
+    font-weight: bold;
+    font-family: Serif;
+    font-size: large;
+    cursor: pointer;
 }
