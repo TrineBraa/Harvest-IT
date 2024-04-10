@@ -74,7 +74,7 @@ const model = {
             { 
                 id: 1,
                 name: 'blåbær',
-                category: model.data.categories[0],
+                category: 0,
                 lastHarvest: '2024-10-22',
                 location: 'blåbærskogen i Tønsberg', 
                 image: '', 

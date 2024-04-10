@@ -15,12 +15,14 @@
     width: 150px;
     margin: 5px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .loginInput {
     height: 20px;
     width: 300px;
     margin: 4px;
+    border-bottom: 1px solid black;
 }
 
 #mushroomLogin {
