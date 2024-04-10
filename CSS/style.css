@@ -16,10 +16,12 @@
     margin: 5px;
     border-radius: 20px;
     cursor: pointer;
+    box-shadow: 2px 4px;
+    border: 1px solid black;
 }
 
 .loginInput {
-    height: 20px;
+    height: 25px;
     width: 300px;
     margin: 4px;
     border-bottom: 1px solid black;
@@ -28,5 +30,35 @@
 #mushroomLogin {
     width: 250px;
     height: 250px;
-    
+}
+
+#newUserDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUser{
+    height: 25px;
+    width: 300px;
+    margin: 4px;
+    border-bottom: 1px solid black;
+}
+
+.newUserButton{
+    height: 25px;
+    width: 150px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 2px 4px;
+    border: 1px solid black;
+}
+
+.errorLoggin{
+    margin: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
 }
