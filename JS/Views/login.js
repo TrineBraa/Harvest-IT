@@ -6,7 +6,7 @@ function logInView(){
     <div id="loginScreen">
         <h1>Harvest IT</h1>
         <br/>
-        <img id="mushroomLogin" src="/Emne 2/HarvestIT/Harvest IT/Images/mushroomlogo.png">
+        <img id="mushroomLogin" src="./Images/mushroomlogo.png">
         <br/>
         <br/>
         <div id="logInInputContainer">
