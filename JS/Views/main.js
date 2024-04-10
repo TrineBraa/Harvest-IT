@@ -19,7 +19,9 @@ function mainPageView() {
     <br/>
    <button id="Berries" onclick="clickBerriesf()">Berries</button>
    <button id="Mushrooms" onclick="clickMushroomsf()">Mushrooms</button>
-   <button id="Fish" onclick="ClickFishf()">Fish</button>  <br/>
+   <button id="Fish" onclick="ClickFishf()">Fish
+    <img class="fishypic" src="/Images/FishBtn.png">
+   </button>  <br/>
    <button id="RegisterNewFind" onclick="registerNewFindf()">Register New Find</button>  `;
 }
 
