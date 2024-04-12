@@ -1,6 +1,8 @@
 * {
+    position: relative;
     background-color: cadetblue;
     font-family: Arial, Helvetica, sans-serif;
+    z-index: -10;
 }
 
 #loginScreen{
@@ -119,7 +121,7 @@ color: darkgreen;
     margin-left: 30px;
     border-radius: 25%;
     height: 40px;
-    width: 120px;
+    width: 170px;
     background-color: lightcoral;
     color: purple;
     font-weight: bold;
@@ -135,7 +137,7 @@ color: darkgreen;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
-    width: 120px;
+    width: 170px;
     background-color: darkred;
     color:rgb(7, 221, 7);
     font-weight: bold;
@@ -153,7 +155,7 @@ color: darkgreen;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
-    width: 120px;
+    width: 170px;
     background-color: teal;
     color: orange;
     font-weight: bold;
@@ -171,7 +173,7 @@ color: darkgreen;
     margin-top: 5px;
     border-radius: 25%;
     height: 50px;
-    width: 150px;
+    width: 190px;
     background-color: darkslategray;
     color: yellow;
     font-weight: bold;
@@ -180,11 +182,6 @@ color: darkgreen;
     cursor: pointer;
     border: 2px solid black;
 }
-.fishypic{
-    height: 25px;
-    width: 40px;
-}
-
 #sliderContainer{
     width: 500px;
 }
@@ -213,4 +210,84 @@ color: darkgreen;
 #returnButton:hover {
     border: 2px solid black;
     background-color: rgb(26, 174, 174);
+}
+.fishypic{
+    height: 25px;
+    width: 40px;
+    background-color: teal;
+}
+
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    align-items:  center;
+    padding: 10px 20px;
+}
+input{
+    flex:1;
+    height: 50px;
+    background: transparent;
+    background-color: #e9f3ff;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+
+}
+.mushyPic{
+    height: 25px;
+    background-color: darkred;
+    margin-top: 2px;
+}
+.berryPic{
+    height: 25px;
+    background-color: lightcoral;
+    margin-top: 2px;
+}
+.Search {
+    background: transparent;
+    border: 0;
+    outline: 0;
+
+}
+button .fa-solid {
+width: 25px;
+color: #e9f3ff;
+padding: 2px black;
+font-size: 22px;
+cursor: pointer;
+}
+#result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+#result-box ul li{
+list-style: none;
+border-radius: 3px;
+padding: 15px 10px;
+cursor: pointer;
+}
+#result-box ul li:hover{
+    background: #e9f3ff;
+}
+#result-box{
+    max-height: 300px;
+    overflow-y: scroll;
+}
+.registerPlus{
+    height: 25px;
+    background-color: darkslategray;
+}
+#mainContainer{
+    background-image: url("../Images/Harvest-logo.png");
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
