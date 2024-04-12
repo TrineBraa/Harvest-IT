@@ -1,5 +1,90 @@
 //placeholder
-function berryview() {
-    document.getElementById('app').innerHTML = /*HTML*/ 
-    `<div>Berry Page Berry Page Berry Page Berry Page Berry Page</div> `
+function berryView() {
+    document.getElementById('app').innerHTML = /*HTML*/ `
+    <h2>Bær</h2>
+    ${returnButtonMain()}
+    <div id="sliderContainer">
+    <span>Avstand fra din lokasjon</span>
+    <br/>
+    <br/>
+    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    </div>
+    <br/>
+    <div id="mapContainer">
+        KartPlacement
+    </div>
+     <br/>
+     <br/>
+    
+     <h3>Registrerte bær:</h3>
+    <li id= "listedFinds">
+       <ul>Markjordbær <img src="./Images/iicon.png" class="iicon" onclick="wildStrawberryInfoView()"></ul> 
+       <ul>Blåbær <img src="./Images/iicon.png" class="iicon" onclick="blueberryInfoView()"></ul> 
+       <ul>Bringebær <img src="./Images/iicon.png" class="iicon" onclick="raspberryInfoView()"></ul> 
+    </li>
+    `;
+}
+
+function raspberryInfoView (){ 
+    document.getElementById('app').innerHTML = /*HTML*/ `
+    ${returnButtonBerry()}
+    <h2>Markjordbær</h2>
+    <div>Sesong: sommer og tidlig høst</div>
+    <h3>Om markjordbær</h3>
+    <p>Markjordbær er en flerårig urt i rosefamilien. Planten vokser gjerne på enger
+    og tørrbakker og er vanlig over hele landet. Markjordbær er smakfull og nytes som de er. Det vitenskapelige navnet på markjordbær er <italic>fragaria vesca</italic>.</p>
+    <h3>Beskrivelse</h3>
+    <p>Planten er 5-20 centimer høy, med lange utløpere langs bakken som slår rot og danner nye planter.
+    Bladene er trekoplede og tannete, blomstene er hvite. Jordbæret, som er en oppsvulmet blomsterbunn, løsner lett.</p>
+    <p>Markjordbær vokser på enger, tørrbakker og i urterik skog, for det meste på litt næringsrik grunn. De er vanlige i hele landet.</p>
+
+    <h3>Bilder</h3>
+    <img src="./Images/wildstrawberry.jpeg">
+    <img src="./Images/wildstrawberry2.jpeg">
+    `;
+}
+
+function blueberryInfoView () { 
+    document.getElementById('app').innerHTML = /*HTML*/ `
+    ${returnButtonBerry()}
+    <h2>Blåbær</h2>
+    <div>Sesong: Sensommer og Høst</div>
+    <h3>om Blåbær</h3>
+    <p>Blåbær er en dvergbusk i bærlyngslekten i lyngfamilien med grønne kantete greiner. Blåbær er vanlig i storedeler av Europa, men finnes også i Nord-Amerike og Asia.
+    I norge finnes planten over hele landet, fra skogsområder i lavlandet til rundt 1700 meter over havet på høyfjell.
+     blåbæren's vitenskapelige navn er <italic>Vaccinium Myrtillus</italic>.</p>
+    <h3>Beskrivelse</h3>
+    <p>Planten blir mellom 20 og 30 cm høy, og frukten som blir dannet, 
+    er blåsvarte, saftfulle bær - blåbær - som blir brukt til saft of syltetøy.</p>
+    <p>SkogsBlåbær kan dessverrre ikke dyrkes og blåbær du finner i butikken kalles HageBlåbær (Vaccinium Corymbosum) og har hvitt fruktkjøtt</p>
+    <br/>
+    <h3>Bilder</h3>
+    <img src="./Images/Blabær.jpg">
+    <img src="./Images/Blabar2.jpg">
+    
+    `;
+
+}
+
+function wildStrawberryInfoView () { 
+    document.getElementById('app').innerHTML = /*HTML*/ `
+    ${returnButtonBerry()}
+    <h2>Bringebær</h2>
+    <div>Sesong: vår, sommer og tidlig høst</div>
+    <h3>Om bringebær</h3>
+    <p>Bringebær er en gruppe arter i bjørnebærslekta i rosefamilien av meterhøye
+    busker med spiselige frukter. Selve bringebæret er sammensatte steinfrukter. Den
+    mest kjente i Norge er bringebær, men svartbringebær dyrkes også. Det vitenskapelige navnet på bringebær er <italic>rubus idaeus</italic>.</p>
+    <h3>Beskrivelse</h3>
+    <p>Bringebær har glatte årsskudd med finnete blad med fem småblad. Fra 
+    årsskuddene vokser det året etter ut sidekvister med trekoblede blad. De femtallige
+    blomstene har hvite kronblad, mange pollenbærere og mange frie fruktblad. Fruktene
+    som dannes er en sammensatt steinfrukt, og røde, eller gule.</p>
+    <p>I Norge er bringebær vanlig i skogen og på steinete steder. De er vanlig over det meste av landet.</p>
+    <h3>Bilder</h3>
+    <img src="./Images/raspberry.jpeg"> 
+    <img src="./Images/raspberry2.jpeg">
+
+    `;
+
 }

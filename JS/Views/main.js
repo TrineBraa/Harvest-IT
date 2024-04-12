@@ -30,7 +30,7 @@ function OpenProfile() {
 }
 
 function clickBerriesf() {
-    berryview();
+    berryView();
 }
 
 function clickMushroomsf() {

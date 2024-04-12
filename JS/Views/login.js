@@ -7,19 +7,19 @@ function logInView(){
         <br/>
         <br/>
         <div id="logInInputContainer">
-        <label of="loginEmail">Username</label>
+        <label of="loginEmail">E-post</label>
         <input id="loginEmail" class="loginInput" type="email" oninput="model.inputs.loginInputs.email=this.value" value="${model.inputs.loginInputs.email ?? ''}" placeholder="E-mail" required/>
         <br/>
-        <label of="loginPass">Password</label>
-        <input id="loginPass" class="loginInput" type="password" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" placeholder="Password" required>
+        <label of="loginPass">Passord</label>
+        <input id="loginPass" class="loginInput" type="password" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" placeholder="Passord" required>
         <br/>
         <span class="errorLoggin">${model.inputs.loginInputs.errorMsg}</span>
         </div>
         <br/>
         <br/>
-        <button class="loginButton" onclick="logIn()">Log In</button>
+        <button class="loginButton" onclick="logIn()">Logg Inn</button>
         <br/>
-        <button class="loginButton" onclick="newUserView()">Register New User</button>
+        <button class="loginButton" onclick="newUserView()">Registrer Ny Bruker</button>
         <br/>
     </div>
     `;
