@@ -4,7 +4,7 @@ function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     Du er logget inn som ${model.app.loggedInUser}
     <div id="mainContainer">
-    <button id="Profile" onclick="profileView()">(Profile)</button>
+    <button id="Profile" onlick="profioncleView()"><i class="fa-solid fa-person-hiking"></i></button>
         <div class="search-wrapper">
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
