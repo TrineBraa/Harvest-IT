@@ -25,7 +25,7 @@ function berryView() {
     `;
 }
 
-function raspberryInfoView (){ 
+function wildStrawberryInfoView(){ 
     document.getElementById('app').innerHTML = /*HTML*/ `
     ${returnButtonBerry()}
     <h2>Markjordbær</h2>
@@ -39,8 +39,10 @@ function raspberryInfoView (){
     <p>Markjordbær vokser på enger, tørrbakker og i urterik skog, for det meste på litt næringsrik grunn. De er vanlige i hele landet.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/wildstrawberry.jpeg">
     <img src="./Images/wildstrawberry2.jpeg">
+    </div>
     `;
 }
 
@@ -59,14 +61,15 @@ function blueberryInfoView () {
     <p>SkogsBlåbær kan dessverrre ikke dyrkes og blåbær du finner i butikken kalles HageBlåbær (Vaccinium Corymbosum) og har hvitt fruktkjøtt</p>
     <br/>
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/Blabær.jpg">
     <img src="./Images/Blabar2.jpg">
-    
+    </div>
     `;
 
 }
 
-function wildStrawberryInfoView () { 
+function raspberryInfoView () { 
     document.getElementById('app').innerHTML = /*HTML*/ `
     ${returnButtonBerry()}
     <h2>Bringebær</h2>
@@ -82,8 +85,10 @@ function wildStrawberryInfoView () {
     som dannes er en sammensatt steinfrukt, og røde, eller gule.</p>
     <p>I Norge er bringebær vanlig i skogen og på steinete steder. De er vanlig over det meste av landet.</p>
     <h3>Bilder</h3>
-    <img src="./Images/raspberry.jpeg"> 
+    <div class="infoImg">
+    <img src="./Images/rasberry.jpeg"> 
     <img src="./Images/raspberry2.jpeg">
+    </div>
     `;
 
 }

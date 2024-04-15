@@ -42,8 +42,10 @@ function salmonInfoView () {
     og Portugal. Gytetidene kan være svært forskjellige, og gytingen kan strekke seg over flere måneder.</p>
 
     <h3>Bilder</h3>
-    <img src="./Images/mackerel.jpeg">
-    <img src="./Images/mackerel2.jpeg">
+    <div class="infoImg">
+    <img src="./Images/salmon.jpg">
+    <img src="./Images/salmon2.jpeg">
+    </div>
     `;
 
 }
@@ -66,8 +68,10 @@ function mackerelInfoView (){
     og Portugal. Gytetidene kan være svært forskjellige, og gytingen kan strekke seg over flere måneder.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/mackerel.jpeg">
     <img src="./Images/mackerel2.jpeg">
+    </div>
     `;
 }
 
@@ -91,8 +95,10 @@ function codInfoView (){
     den egentlige skreien, er den viktigste av disse.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/cod.jpeg">
     <img src="./Images/cod2.jpg">
+    </div>
     `;
 }
 

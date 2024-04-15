@@ -27,7 +27,7 @@ function mushroomView() {
 
 function chanterelleInfoView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
-    ${returnButtonMushroom}
+    ${returnButtonMushroom()}
     <h2>Kantarell</h2>
     <div>Sesong: fra juni til oktober</div>
     <h3>Om Kantarell</h3>
@@ -38,14 +38,16 @@ function chanterelleInfoView(){
     <p>Den eneste soppen som kan forveksles med ekte kantarell er falsk kantarell. Ingen giftige sopper ligner.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/Kantarell.jpg">
     <img src="./Images/Kantarell2.jpg">
+    </div>
     `;
 }
 
 function pennyBunInfoView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
-    ${returnButtonMushroom}
+    ${returnButtonMushroom()}
     <h2>Steinsopp</h2>
     <div>Sesong: fra juli til oktober</div>
     <h3>Om Steinsopp</h3>
@@ -58,14 +60,16 @@ function pennyBunInfoView(){
     <p>Foten er altid et fint, hvit maskenett øverst, noe som er et sikkert kjennetegn for arten.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/Steinsopp.jpg">
     <img src="./Images/Steinsopp2.jpg">
+    </div>
     `;
 }
 
 function AgaricusInfoView(){
     document.getElementById('app').innerHTML = /*HTML*/ `
-    ${returnButtonMushroom}
+    ${returnButtonMushroom()}
     <h2>Sjampinjong</h2>
     <div>Sesong: mellom August og September</div>
     <h3>Om Sjampinjong</h3>
@@ -80,7 +84,9 @@ function AgaricusInfoView(){
     <p>De enkelte arter av sjampinjong er til dels vannskelig å skille fra hverandre.</p>
 
     <h3>Bilder</h3>
+    <div class="infoImg">
     <img src="./Images/Sjampinjong.jpg">
     <img src="./Images/Sjampinjong2.jpg">
+    </div>
     `;
 }

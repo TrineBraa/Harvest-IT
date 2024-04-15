@@ -3,8 +3,8 @@
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     Du er logget inn som ${model.app.loggedInUser}
+    <button id="Profile" onclick="profileView()">(Profile)</button>
     <div id="mainContainer">
-        <button id="Profile" onclick="OpenProfile()">(Profile)</button>
         <div class="search-wrapper">
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
@@ -20,7 +20,7 @@ function mainPageView() {
         <button id="Mushrooms" onclick="clickMushroomsf()">Mushrooms
             <img class="mushyPic" src="./Images/shrooms.png">
         </button>
-        <button id="Fish" onclick="ClickFishf()">Fish
+        <button id="Fish" onclick="clickFishf()">Fish
             <img class="fishypic" src="./Images/FishBtn.png">
         </button>  <br/>
         <button id="RegisterNewFind" onclick="registerNewFindf()">Register New Find
@@ -59,8 +59,8 @@ function selectInput(list) {
 }
 }
 
-function OpenProfile() {
-    profileview();
+function openProfile() {
+    profileView();
 }
 
 function clickBerriesf() {
@@ -71,7 +71,7 @@ function clickMushroomsf() {
     mushroomView();
 }
 
-function ClickFishf() {
+function clickFishf() {
     fishView();
 }
 function registerNewFindf() {
