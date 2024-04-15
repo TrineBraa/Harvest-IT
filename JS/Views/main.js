@@ -15,16 +15,16 @@ function mainPageView() {
         </div>
         <br/>
         <button id="Berries" onclick="clickBerriesf()">Berries
-            <img class="berryPic" src="/Images/berries.png">
+            <img class="berryPic" src="./Images/berries.png">
         </button>
         <button id="Mushrooms" onclick="clickMushroomsf()">Mushrooms
-            <img class="mushyPic" src="/Images/shrooms.png">
+            <img class="mushyPic" src="./Images/shrooms.png">
         </button>
         <button id="Fish" onclick="ClickFishf()">Fish
-            <img class="fishypic" src="/Images/FishBtn.png">
+            <img class="fishypic" src="./Images/FishBtn.png">
         </button>  <br/>
         <button id="RegisterNewFind" onclick="registerNewFindf()">Register New Find
-        <img class="registerPlus" src="/Images/Register.png">
+        <img class="registerPlus" src="./Images/Register.png">
         </button>
    </div> `;
 }
@@ -38,11 +38,11 @@ function clickBerriesf() {
 }
 
 function clickMushroomsf() {
-    mushroomview();
+    mushroomView();
 }
 
 function ClickFishf() {
-    fishview();
+    fishView();
 }
 function registerNewFindf() {
     registerViewF();

@@ -206,6 +206,7 @@ color: darkgreen;
 .iicon {
     width: 20px;
     height: 20px;
+    cursor: pointer;
 }
 
 #returnButton{

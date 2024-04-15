@@ -17,11 +17,11 @@ function berryView() {
      <br/>
     
      <h3>Registrerte bær:</h3>
-    <li id= "listedFinds">
-       <ul>Markjordbær <img src="./Images/iicon.png" class="iicon" onclick="wildStrawberryInfoView()"></ul> 
-       <ul>Blåbær <img src="./Images/iicon.png" class="iicon" onclick="blueberryInfoView()"></ul> 
-       <ul>Bringebær <img src="./Images/iicon.png" class="iicon" onclick="raspberryInfoView()"></ul> 
-    </li>
+    <ul id= "listedFinds">
+       <li>Markjordbær <img src="./Images/iicon.png" class="iicon" onclick="wildStrawberryInfoView()"></li> 
+       <li>Blåbær <img src="./Images/iicon.png" class="iicon" onclick="blueberryInfoView()"></li> 
+       <li>Bringebær <img src="./Images/iicon.png" class="iicon" onclick="raspberryInfoView()"></li> 
+    </ul>
     `;
 }
 
@@ -84,7 +84,6 @@ function wildStrawberryInfoView () {
     <h3>Bilder</h3>
     <img src="./Images/raspberry.jpeg"> 
     <img src="./Images/raspberry2.jpeg">
-
     `;
 
 }
