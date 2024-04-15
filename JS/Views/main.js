@@ -2,10 +2,10 @@
 
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
-    Du er logget inn som ${model.app.loggedInUser}
+    Du er logget inn som <em> <b>${model.app.loggedInUser}</b> </em>
     <div id="mainContainer">
-    <button id="Profile" onlick="profioncleView()"><i class="fa-solid fa-person-hiking"></i></button>
-        <div class="search-wrapper">
+    <button id="Profile" onlick="profileView()"><i class="fa-solid fa-person-hiking"></i>Profile</button>
+        <div class="search-box">
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
                 <button id="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
