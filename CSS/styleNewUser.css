@@ -1,0 +1,13 @@
+#newUserDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.newUser {
+    height: 25px;
+    width: 300px;
+    margin: 4px;
+    border-bottom: 1px solid black;
+}

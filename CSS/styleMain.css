@@ -37,68 +37,6 @@ li>img {
     pointer-events: auto;
 }
 
-#loginScreen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.loginButton {
-    height: 25px;
-    width: 150px;
-    margin: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 2px 4px;
-    border: 1px solid black;
-}
-
-.loginInput {
-    height: 25px;
-    width: 300px;
-    margin: 4px;
-    border-bottom: 1px solid black;
-}
-
-#mushroomLogin {
-    width: 250px;
-    height: 250px;
-}
-
-#newUserDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.newUser {
-    height: 25px;
-    width: 300px;
-    margin: 4px;
-    border-bottom: 1px solid black;
-}
-
-.newUserButton {
-    height: 25px;
-    width: 150px;
-    margin: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 2px 4px;
-    border: 1px solid black;
-}
-
-.errorLoggin {
-    margin: 3px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
-    text-align: center;
-}
-
-
-
 #Profile {
     margin-top: -5px;
     margin-right: auto;
@@ -194,15 +132,6 @@ li>img {
     z-index: 2;
 }
 
-#sliderContainer {
-    width: 500px;
-}
-
-.slider {
-    width: 100%;
-    cursor: pointer;
-    height: 20px;
-}
 
 .iicon {
     width: 20px;
@@ -320,23 +249,6 @@ button .fa-solid {
     height: 25px;
     background-color: darkslategray;
     background-image: none;
-}
-
-
-.infoImg{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.infoImg>img {
-    height: 200px;
-    width: 200px;
-    margin: 5px;
-}
-
-#smileyface {
-    width: 50px;
-    height: 50px;
 }
 
 .mainPageBtn {

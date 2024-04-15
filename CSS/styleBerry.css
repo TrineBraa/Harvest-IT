@@ -1,0 +1,9 @@
+#sliderContainer {
+    width: 500px;
+}
+
+.slider {
+    width: 100%;
+    cursor: pointer;
+    height: 20px;
+}

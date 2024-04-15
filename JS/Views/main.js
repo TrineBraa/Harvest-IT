@@ -2,17 +2,10 @@
 
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
-<<<<<<< Updated upstream
     Du er logget inn som <em> <b>${model.app.loggedInUser}</b> </em>
+    <button id="Profile" onlick="profileView()"><i class="fa-solid fa-person-hiking"><br/><i>Profil</i></button>
     <div id="mainContainer">
-    <button id="Profile" onlick="profileView()"><i class="fa-solid fa-person-hiking"></i>Profile</button>
         <div class="search-box">
-=======
-    Du er logget inn som ${model.app.loggedInUser}
-    <button id="Profile" onlick="profileView()"><img src="fa-solid fa-person-hiking"/></button>
-    <div id="mainContainer">
-        <div class="search-wrapper">
->>>>>>> Stashed changes
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
                 <button id="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -22,7 +15,7 @@ function mainPageView() {
         </div>
         <br/>
         <button id="Berries" onclick="clickBerriesf()">Berries
-            <img class="berryPic" src="./Images/berries.png">
+            <img class="berryPic" src="./Images/berries.png"> 
         </button>
         <button id="Mushrooms" onclick="clickMushroomsf()">Mushrooms
             <img class="mushyPic" src="./Images/shrooms.png">

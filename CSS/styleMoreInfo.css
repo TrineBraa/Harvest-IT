@@ -1,0 +1,11 @@
+
+.infoImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoImg>img {
+    height: 200px;
+    width: 200px;
+    margin: 5px;
+}
