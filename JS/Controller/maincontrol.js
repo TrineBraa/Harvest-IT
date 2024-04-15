@@ -10,6 +10,7 @@ let availableKeywords = [
 const resultsBox = document.querySelector(".results-box");
 const inputBox = document.querySelector("#input-box");
 
+<<<<<<< Updated upstream
 inputBox.onkeyup = function(){
     let result = [];
     let input = inputBox.value;
@@ -23,8 +24,23 @@ inputBox.onkeyup = function(){
     if(!result.length) {
         resultsBox.innerHTML = '';
     }
+=======
+// inputBox.onkeyup = function(){
+//     let result = [];
+//     let input = inputBox.value;
+//     if(input.length){
+//         result= availableKeywords.filter((keyword)=>{
+//           return  keyword.toLowerCase().includes(input.toLowerCase());
+//     });
+//     console.log(result);
+//     }
+//     display(result);
+//     if(!result.length) {
+//         resultsBox.innerHTML = '';
+//     }
+>>>>>>> Stashed changes
 
-};
+// };
 function display(result){
     const content = result.map((list) => {
         return "<li onclick=selectInput(this)> + list + </li>";
