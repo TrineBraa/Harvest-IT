@@ -3,11 +3,39 @@
     background-color: cadetblue;
     font-family: Arial, Helvetica, sans-serif;
     z-index: -10;
+   
+}
+
+/* 
+#app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} */
+
+#mainContainer{
+    height: 97vh;
+    width: 99vw;
     background-image: url("../Images/Harvest-logo.png");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: initial;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+
+li{
+    pointer-events: none;
+}
+
+li > img {
+    pointer-events: auto;
 }
 
 #loginScreen{
@@ -297,12 +325,4 @@ cursor: pointer;
     height: 25px;
     background-color: darkslategray;
     background-image: none;
-}
-#mainContainer{
-    z-index: 3;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    position: relative;
 }

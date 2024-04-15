@@ -3,11 +3,7 @@ const model = {
         loggedInUser: null,
         darkMode: false,
         lang: 'no',
-<<<<<<< Updated upstream
         currentPage: 'mainPage',
-=======
-        currentPage: 'mushroomPage',
->>>>>>> Stashed changes
         page: [
             'loginPage',
             'mainPage',

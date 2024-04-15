@@ -9,7 +9,7 @@ function mainPageView() {
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
                 <button id="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                <div class="result-box">
+                <div id="resultBox" class="result-box">
                 </div>
             </div>
         </div>
@@ -27,6 +27,36 @@ function mainPageView() {
         <img class="registerPlus" src="./Images/Register.png">
         </button>
    </div> `;
+
+const resultsBox = document.getElementById("resultBox");
+const inputBox = document.getElementById("input-box");
+
+inputBox.onkeyup = function(){
+    let result = [];
+    let input = inputBox.value;
+    if(input.length){
+        result = availableKeywords.filter((keyword)=>{
+          return  keyword.toLowerCase().includes(input.toLowerCase());
+    });
+    console.log(result);
+    }
+    display(result);
+    if(!result.length) {
+        resultsBox.innerHTML = '';
+    }
+
+ };
+
+ function display(result){
+    const content = result.map((list) => {
+        return "<li onclick=selectInput(this)> "+ list + "</li>";
+    });
+    resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
+}
+function selectInput(list) {
+    inputBox.value = list.innerHTML
+    resultsBox.innerHTML = '';
+}
 }
 
 function OpenProfile() {
