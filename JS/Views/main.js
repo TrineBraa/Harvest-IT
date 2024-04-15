@@ -3,8 +3,8 @@
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     Du er logget inn som ${model.app.loggedInUser}
-    <button id="Profile" onclick="profileView()">(Profile)</button>
     <div id="mainContainer">
+    <button id="Profile" onclick="profileView()">(Profile)</button>
         <div class="search-wrapper">
             <div class="row">
                 <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
