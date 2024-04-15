@@ -3,7 +3,7 @@ const model = {
         loggedInUser: null,
         darkMode: false,
         lang: 'no',
-        currentPage: 'berryPage',
+        currentPage: 'mainPage',
         page: [
             'loginPage',
             'mainPage',

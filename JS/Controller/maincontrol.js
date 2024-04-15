@@ -8,13 +8,13 @@ let availableKeywords = [
 ];
 
 const resultsBox = document.querySelector(".results-box");
-const inputBox = document.querySelector("input-box");
+const inputBox = document.querySelector("#input-box");
 
 inputBox.onkeyup = function(){
     let result = [];
     let input = inputBox.value;
     if(input.length){
-        result= availableKeywords.filter((keyword)=>{
+        result = availableKeywords.filter((keyword)=>{
           return  keyword.toLowerCase().includes(input.toLowerCase());
     });
     console.log(result);
@@ -39,4 +39,4 @@ function selectInput(list) {
 function returnButtonMain(){
     let html = `<div id="closeButton"><button id="returnButton" onclick="mainPageView()">X</button></div>`;
     return html;
-}
+};

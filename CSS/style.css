@@ -3,6 +3,11 @@
     background-color: cadetblue;
     font-family: Arial, Helvetica, sans-serif;
     z-index: -10;
+    background-image: url("../Images/Harvest-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: initial;
 }
 
 #loginScreen{
@@ -118,6 +123,7 @@ color: darkgreen;
     position: absolute;
     right: 37%;
     top: 60%;
+    margin-top: 175px;
     margin-left: 30px;
     border-radius: 25%;
     height: 40px;
@@ -129,11 +135,13 @@ color: darkgreen;
     font-size: large;
     cursor: pointer;
     border: 2px solid black;
+    background-image: none;
 }
 #Mushrooms{
     position: absolute;
     right: 47%;
     top: 60%;
+    margin-top: 175px;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
@@ -145,6 +153,7 @@ color: darkgreen;
     font-size: large;
     cursor: pointer;
     border: 2px solid black;
+    background-image: none;
 }
     
 
@@ -152,6 +161,7 @@ color: darkgreen;
     position: absolute;
     right: 57%;
     top: 60%;
+    margin-top: 175px;
     margin-left: 10px;
     border-radius: 25%;
     height: 40px;
@@ -163,14 +173,14 @@ color: darkgreen;
     font-size: large;
     cursor: pointer;
     border: 2px solid black;
+    background-image: none;
 }
 
 #RegisterNewFind{
     position: absolute;
     right: 46%;
     top: 70%;
-    margin-left: 145px;
-    margin-top: 5px;
+    margin-top: 225px;
     border-radius: 25%;
     height: 50px;
     width: 190px;
@@ -181,6 +191,7 @@ color: darkgreen;
     font-size: large;
     cursor: pointer;
     border: 2px solid black;
+    background-image: none;
 }
 #sliderContainer{
     width: 500px;
@@ -215,6 +226,7 @@ color: darkgreen;
     height: 25px;
     width: 40px;
     background-color: teal;
+    background-image: none;
 }
 
 .search-box{
@@ -243,17 +255,18 @@ input{
     height: 25px;
     background-color: darkred;
     margin-top: 2px;
+    background-image: none;
 }
 .berryPic{
     height: 25px;
     background-color: lightcoral;
     margin-top: 2px;
+    background-image: none;
 }
 .Search {
     background: transparent;
     border: 0;
     outline: 0;
-
 }
 button .fa-solid {
 width: 25px;
@@ -282,12 +295,13 @@ cursor: pointer;
 .registerPlus{
     height: 25px;
     background-color: darkslategray;
+    background-image: none;
 }
 #mainContainer{
-    background-image: url("../Images/Harvest-logo.png");
     z-index: 3;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    position: relative;
 }
