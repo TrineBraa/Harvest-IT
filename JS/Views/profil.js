@@ -50,7 +50,7 @@ function makeFriendsListHtml(){
                 <img class="friendProfilePic" src="${friend.profilePic}"/>
             </div>
 
-        `
+        `;
     }
     return html;
 }
