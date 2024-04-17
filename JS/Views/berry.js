@@ -32,11 +32,13 @@ function wildStrawberryInfoView(){
     <div>Sesong: sommer og tidlig høst</div>
     <h3>Om markjordbær</h3>
     <p class="infoParagraph">Markjordbær er en flerårig urt i rosefamilien. Planten vokser gjerne på enger
-    og tørrbakker og er vanlig over hele landet. Markjordbær er smakfull og nytes som de er. Det vitenskapelige navnet på markjordbær er <em>fragaria vesca</em>.</p>
+    og tørrbakker og er vanlig over hele landet. Markjordbær er smakfull og nytes som de er. 
+    Det vitenskapelige navnet på markjordbær er <em>fragaria vesca</em>.</p>
     <h3>Beskrivelse</h3>
     <p class="infoParagraph">Planten er 5-20 centimer høy, med lange utløpere langs bakken som slår rot og danner nye planter.
     Bladene er trekoplede og tannete, blomstene er hvite. Jordbæret, som er en oppsvulmet blomsterbunn, løsner lett.</p>
-    <p class="infoParagraph">Markjordbær vokser på enger, tørrbakker og i urterik skog, for det meste på litt næringsrik grunn. De er vanlige i hele landet.</p>
+    <p class="infoParagraph">Markjordbær vokser på enger, tørrbakker og i urterik skog, 
+    for det meste på litt næringsrik grunn. De er vanlige i hele landet.</p>
 
     <h3>Bilder</h3>
     <div class="infoImg">
@@ -58,7 +60,8 @@ function blueberryInfoView () {
     <h3>Beskrivelse</h3>
     <p class="infoParagraph">Planten blir mellom 20 og 30 cm høy, og frukten som blir dannet, er blåsvarte, saftfulle bær - blåbær - 
     som blir brukt til saft of syltetøy.</p>
-    <p class="infoParagraph">Skogsblåbær kan dessverrre ikke dyrkes og blåbær du finner i butikken kalles hageBlåbær (<em>Vaccinium Corymbosum</em>) og har hvitt fruktkjøtt</p>
+    <p class="infoParagraph">Skogsblåbær kan dessverrre ikke dyrkes og blåbær du finner i butikken kalles hageBlåbær (<em>Vaccinium Corymbosum</em>) 
+    og har hvitt fruktkjøtt.</p>
     <br/>
     <h3>Bilder</h3>
     <div class="infoImg">

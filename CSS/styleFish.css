@@ -8,6 +8,6 @@
     height: 20px;
 }
 
-.infoParagraph {
+.infoParagraph { /* denne brukes på alle paragrafene om bær/fisk/sopp (de med <p>-tag) */
     width: 500px;
 }
