@@ -61,7 +61,7 @@ function selectInput(list) {
 }
 
 function openProfile() {
-    let user = model.data.users.find((u) => u.id == model.app.profileToVisit)
+    backToProfile();
     profileView();
 }
 

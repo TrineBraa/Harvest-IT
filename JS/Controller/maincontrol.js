@@ -40,3 +40,8 @@ function returnButtonMain(){
     let html = `<div id="closeButton"><button id="returnButton" onclick="mainPageView()">X</button></div>`;
     return html;
 };
+
+
+function backToProfile(){
+    model.app.profileToVisit = model.app.loggedInUser
+}
