@@ -170,7 +170,7 @@ li>img {
 }
 
 .row {
-    display: flex;
+    display: grid;
     align-items: center;
     padding: 10px 20px;
 }

@@ -3,6 +3,7 @@
 //placholder
 function registerViewF(){
     document.getElementById("app").innerHTML = /*html*/`
+    <button onclick="mainPageView()" class="mainPageBtn">Gå tilbake til forsiden</button>
     <div>Here you can register your finds</div>
 
     <div>
