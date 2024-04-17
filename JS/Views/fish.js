@@ -32,14 +32,19 @@ function salmonInfoView () {
     <h2>Laks</h2>
     <div>Sesong: fra april/mai til oktober</div>
     <h3>Om laks</h3>
-    <p>Laks er en fiskeart i laksefamilien som vanligvis lever mye av livet i havet, men som vandrer opp i elver for å gyte.
-    Laksen er ettertraktet både som matfisk og sportsfisk, og er gjennom oppdrettsnæringen blitt en særdeles viktig eksportvare. Det vitenskapelige navnet på laks er <italic>salmo salar</italic>.</p>
+    <p>Laks er en fiskeart i laksefamilien som vanligvis lever mye av livet i havet, men som vandrer opp i 
+    elver for å gyte. Laksen er ettertraktet både som matfisk og sportsfisk, og er gjennom oppdrettsnæringen 
+    blitt en særdeles viktig eksportvare. Hannlaks kan bli opptil 150 cm og 40 kg, mens hunnlaks blir opptil 
+    120 cm og 20 kg. Det vitenskapelige navnet på laks er <em>salmo salar</em>.</p>
     <h3>Beskrivelse</h3>
-    <p>Makrellen er en svært aktiv og rask svømmer, som lever mesteparten av livet i de frie vannmasser. Stort
-    sett lever den av dyreplankton som rødåte og krill og diverse fiskeyngel. Den beveger seg i store eller mindre stimer. Makrellen er selv attraktiv mat for større fisker som makrellstørje, samt ulike haier og hvaler (spekkhoggere).</p>
-    <p>Det finnes tre ulike bestander av makrell i norske farvann. En bestand gyter sentralt i Nordsjøen og
-    Skagerrak, en bestand gyter vest for Irland og De britiske øyer, og en siste bestand gyter utenfor Spania
-    og Portugal. Gytetidene kan være svært forskjellige, og gytingen kan strekke seg over flere måneder.</p>
+    <p>Laksen ligner på sjøørreten, men skilles fra denne på en slankere kroppsform og smalere og lengre 
+    halerot. Halefinnen har en svak kløft som mangler hos sjøørret. Dessuten har laks få eller ingen prikker 
+    under sidelinjen. Fargen varierer etter blant annet alder og oppholdssted.</p>
+    <p>Laksen hører hjemme i det nordlige Atlanterhav. Den gyter i elver på kontinentet fra Portugal til og 
+    med elven Petsjora vest for Ural. Dessuten gyter den i elver i Storbritannia, Irland, Island, i en elv 
+    ved Godthåb på Grønland og i nordamerikanske elver fra New York til Labrador. Laksen finnes ikke i 
+    Stillehavet. I Norge finner man lakseelver langs hele kysten, fra Enningdalselva ved den sørligste delen 
+    av svenskegrensen til Jakobselva som utgjør grensen mellom Norge og Russland i nord.</p>
 
     <h3>Bilder</h3>
     <div class="infoImg">
@@ -59,7 +64,7 @@ function mackerelInfoView (){
     <p>Makrell er en fiskeart i makrellfamilien. Den blir sjelden over 50 cm, og har en vekt på opptil 
     3,5 kg. Makrellen er lett kjennelig på sin spoleformede kropp og karakteristiske fargetegninger i grønt
     og blått. Mellom rygg- og gattfinne og halefinne har den små, frittstående finner. Det vitenskapelige
-    navnet på makrell er <italic>scomber scombrus</italic>.</p>
+    navnet på makrell er <em>scomber scombrus</em>.</p>
     <h3>Beskrivelse</h3>
     <p>Makrellen er en svært aktiv og rask svømmer, som lever mesteparten av livet i de frie vannmasser. Stort
     sett lever den av dyreplankton som rødåte og krill og diverse fiskeyngel. Den beveger seg i store eller mindre stimer. Makrellen er selv attraktiv mat for større fisker som makrellstørje, samt ulike haier og hvaler (spekkhoggere).</p>
@@ -84,7 +89,7 @@ function codInfoView (){
     <p>Torsk er den viktigste av alle torskefiskene, og har gjennom hundrevis av år bidratt til Norges økonomi og bosetning. 
     Torsken har tre ryggfinner, to gattfinner, skjeggtråd og et svakt overbitt. Fargen på rygg og kroppssider veksler etter 
     tilholdssted og næring mellom grå, olivengrønn, brun eller rødbrun med mørkere marmorering. Buken er lysere, nesten hvit.
-    Den kan bli opptil 180 cm lang og 55 kg tung. Det vitenskapelige navnet på torsk er <italic>gadus morhua</italic>.</p>
+    Den kan bli opptil 180 cm lang og 55 kg tung. Det vitenskapelige navnet på torsk er <em>gadus morhua</em>.</p>
     <h3>Beskrivelse</h3>
     <p>Torsken finnes bare i det nordlige Atlanterhav mellom Vizcaya i sør og Novaja Zemlja og Spitsbergen i nord, ved
     Island, Sør-Grønland, Newfoundland og USAs østkyst til Cape Hatteras. Innenfor dette utbredelsesområdet holder den til i

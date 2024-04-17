@@ -5,17 +5,64 @@
 }
 
 #friendsContainer{
-
+    height: 300px;
+    width: 500px;
+    margin: 2px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(77, 133, 135);
 }
 
 #earnedBadges{
-
+   
+    height: 150px;
+    width: 500px;
+    margin: 2px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(77, 133, 135);
 }
 
-#earnedBadges{
+#nextBadge{
 
+    height: 200px;
+    width: 500px;
+    margin: 2px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(77, 133, 135);
 }
 
 #registrationsDone{
-    
+    height: 150px;
+    width: 500px;
+    margin: 2px;
+    overflow: scroll;
+    overflow-x: hidden;
+    background-color: rgb(77, 133, 135);
+}
+
+#Profiltitle{
+    background-color: rgb(77, 133, 135);
+}
+
+#profileBoxContainer {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.friendProfilePic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.friend{
+    cursor: pointer;
+
+}
+
+.friend:hover{
+    border: 2px solid black;
 }
