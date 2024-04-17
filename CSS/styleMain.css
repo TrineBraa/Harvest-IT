@@ -168,6 +168,10 @@ li>img {
     border-radius: 5px;
     margin: 100px auto 0;
 }
+.row {    
+    display: grid;
+    align-items: center;
+}
 input {
     flex: 1;
     height: 50px;
