@@ -1,7 +1,7 @@
 const model = {
     app: {
-        loggedInUser: '',
-        profileToVisit: '',
+        loggedInUser: 'Linn',
+        profileToVisit: 'Linn',
         darkMode: false,
         lang: 'no',
         currentPage: 'profilePage',
@@ -15,7 +15,6 @@ const model = {
             'mushroomPage',
             'berryPage',
             'fishPage',
-            'friendProfile'
         ]
     },
     inputs: {
