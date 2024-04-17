@@ -15,6 +15,7 @@ const model = {
             'mushroomPage',
             'berryPage',
             'fishPage',
+            'friendProfile'
         ]
     },
     inputs: {

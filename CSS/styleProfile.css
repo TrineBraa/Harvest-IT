@@ -14,7 +14,6 @@
 }
 
 #earnedBadges{
-   
     height: 150px;
     width: 500px;
     margin: 2px;
@@ -24,7 +23,6 @@
 }
 
 #nextBadge{
-
     height: 200px;
     width: 500px;
     margin: 2px;
@@ -54,15 +52,24 @@
 .friendProfilePic{
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 0%;
     object-fit: contain;
+    background-color:  rgb(77, 133, 135);
 }
 
 .friend{
     cursor: pointer;
-
+    background-color:  rgb(77, 133, 135);
 }
 
-.friend:hover{
-    border: 2px solid black;
+#userProfiles{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:  rgb(77, 133, 135);
+    text-align: center;
+}
+
+#shownFriends{
+    margin: 2px;
 }

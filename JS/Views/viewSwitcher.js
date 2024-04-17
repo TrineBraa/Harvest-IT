@@ -6,5 +6,5 @@ function updateView() {
     if ( model.app.currentPage == 'fishPage') fishView();
     if (model.app.currentPage == 'mushroomPage') mushroomView();
     if (model.app.currentPage == 'profilePage') profileView();
-    
+    if (model.app.currentPage == 'friendProfile') friendProfile();
 }
