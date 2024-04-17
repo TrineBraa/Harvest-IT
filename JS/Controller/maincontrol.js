@@ -1,10 +1,10 @@
 let availableKeywords = [
-    'Fish',
-    'Mushrooms',
-    'Berries',
-    'Map',
-    'Profile',
-    'Help',
+    'Fisk',
+    'Sopp',
+    'Bær',
+    'Kart',
+    'Profil',
+    'Hjelp',
 ];
 
 // const resultsBox = document.querySelector(".results-box");

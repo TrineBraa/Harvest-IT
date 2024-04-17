@@ -2,28 +2,29 @@
 
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
-    Du er logget inn som <em> <b>${model.app.loggedInUser}</b> </em>
-    <button onclick="openProfile()" id="Profile"><i class="fa-solid fa-person-hiking"></i><br/>Profil</button>
+   </b> </em>
+    <button onclick="openProfile()" id="Profile"><i class="fa-sharp fa-solid fa-user"></i><br/>${model.app.loggedInUser}</button>
+    <button id="logOut" onclick="mainToLogIn()"><i class="fa-sharp fa-solid fa-key"></i>Logg ut</button>
     <div id="mainContainer">
         <div class="search-box">
             <div class="row">
-                <input type="text" id="input-box" placeholder="Search for Activities" autocomplete="off">
-                <button id="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="input-box" placeholder="Søk for aktiviteter" autocomplete="off">
+                <button id="Search"><i class="fa-solid fa-magnifying-glass"></i></button> 
                 <div id="resultBox" class="result-box">
                 </div>
             </div>
         </div>
         <br/>
-        <button id="Berries" onclick="clickBerriesf()">Berries
+        <button id="Berries" onclick="clickBerriesf()">Bær
             <img class="berryPic" src="./Images/berries.png"> 
         </button>
-        <button id="Mushrooms" onclick="clickMushroomsf()">Mushrooms
+        <button id="Mushrooms" onclick="clickMushroomsf()">Sopp
             <img class="mushyPic" src="./Images/shrooms.png">
         </button>
-        <button id="Fish" onclick="clickFishf()">Fish
+        <button id="Fish" onclick="clickFishf()">Fisk
             <img class="fishypic" src="./Images/FishBtn.png">
         </button>  <br/>
-        <button id="RegisterNewFind" onclick="registerNewFindf()">Register New Find
+        <button id="RegisterNewFind" onclick="registerNewFindf()">Registrer nytt funn
         <img class="registerPlus" src="./Images/Register.png">
         </button>
    </div> `;
@@ -77,3 +78,6 @@ function clickFishf() {
 function registerNewFindf() {
     registerViewF();
 }
+function mainToLogIn() {
+    logInView()
+};
