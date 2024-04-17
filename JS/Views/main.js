@@ -3,7 +3,7 @@
 function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     Du er logget inn som <em> <b>${model.app.loggedInUser}</b> </em>
-    <button onclick="openProfile()" id="Profile"><i class="fa-solid fa-person-hiking"><br/><i>Profil</i></button>
+    <button onclick="openProfile()" id="Profile"><i class="fa-solid fa-person-hiking"></i><br/>Profil</button>
     <div id="mainContainer">
         <div class="search-box">
             <div class="row">
