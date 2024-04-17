@@ -168,13 +168,6 @@ li>img {
     border-radius: 5px;
     margin: 100px auto 0;
 }
-
-.row {
-    display: grid;
-    align-items: center;
-    padding: 10px 20px;
-}
-
 input {
     flex: 1;
     height: 50px;
@@ -189,7 +182,10 @@ input {
 
 #Search {
     background: transparent;
-    border: 0;
+    border: 1px solid;
+    width: 40px;
+    margin-left: 250px;
+    position: absolute;
     outline: 0;
     cursor: pointer;
     ;
@@ -275,4 +271,8 @@ button .fa-solid {
     position: relative;
     z-index: 4;
     box-shadow: 1px 1px orangered;
+}
+#input-box {
+    align-items: center;
+    position: absolute;
 }

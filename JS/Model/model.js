@@ -4,7 +4,7 @@ const model = {
         profileToVisit: '',
         darkMode: false,
         lang: 'no',
-        currentPage: 'loginPage',
+        currentPage: 'mainPage',
         page: [
             'loginPage',
             'mainPage',
