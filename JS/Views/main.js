@@ -29,35 +29,59 @@ function mainPageView() {
         </button>
    </div> `;
 
-const resultsBox = document.getElementById("resultBox");
-const inputBox = document.getElementById("input-box");
+    const resultsBox = document.getElementById("resultBox");
+    const inputBox = document.getElementById("input-box");
 
-inputBox.onkeyup = function(){
-    let result = [];
-    let input = inputBox.value;
-    if(input.length){
-        result = availableKeywords.filter((keyword)=>{
-          return  keyword.toLowerCase().includes(input.toLowerCase());
-    });
-    console.log(result);
-    }
-    display(result);
-    if(!result.length) {
-        resultsBox.innerHTML = '';
-    }
+    inputBox.onkeyup = function () {
+        let result = [];
+        let input = inputBox.value;
+        if (input.length) {
+            result = availableKeywords.filter((keyword) => {
+                return keyword.toLowerCase().includes(input.toLowerCase());
+            });
+            console.log(result);
+        }
+        display(result);
+        if (!result.length) {
+            resultsBox.innerHTML = '';
+        }
 
- };
+    };
 
- function display(result){
-    const content = result.map((list) => {
-        return "<li onclick=selectInput(this)> "+ list + "</li>";
+}
+
+function display(result) {
+    const resultsBox = document.getElementById("resultBox");
+    const content = result.map((item) => {
+        return "<li onclick=selectInput('" + item + "')>" + item + "</li>";
     });
     resultsBox.innerHTML = "<ul>" + content.join('') + "</ul>";
 }
-function selectInput(list) {
-    inputBox.value = list.innerHTML
-    resultsBox.innerHTML = '';
-}
+
+function selectInput(item) {
+    const inputBox = document.getElementById("input-box");
+    console.log(item);
+    switch (item) {
+        case "Fisk":
+            clickFishf();
+            break;
+        case "Bær":
+            clickBerriesf();
+            break;
+        case "Sopp":
+            clickMushroomsf();
+            break;
+        case "Profil":
+            openProfile();
+            break;
+        case "Hjelp":
+            display(availableKeywords);
+            break;
+
+        default:
+            break;
+    }
+
 }
 
 function openProfile() {
