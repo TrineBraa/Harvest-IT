@@ -4,7 +4,7 @@ function mainPageView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
    </b> </em>
     <button onclick="openProfile()" id="Profile"><i class="fa-sharp fa-solid fa-user"></i><br/>${model.app.loggedInUser}</button>
-    <button id="logOut" onclick="mainToLogIn()"><i class="fa-sharp fa-solid fa-key"></i>Logg ut</button>
+    <button id="logOut" onclick="logInView()"><i class="fa-sharp fa-solid fa-key"></i>Logg ut</button>
     <div id="mainContainer">
         <div class="search-box">
             <div class="row">
@@ -15,16 +15,16 @@ function mainPageView() {
             </div>
         </div>
         <br/>
-        <button id="Berries" onclick="clickBerriesf()">Bær
+        <button id="Berries" onclick="berryView()">Bær
             <img class="berryPic" src="./Images/berries.png"> 
         </button>
-        <button id="Mushrooms" onclick="clickMushroomsf()">Sopp
+        <button id="Mushrooms" onclick="mushroomView()">Sopp
             <img class="mushyPic" src="./Images/shrooms.png">
         </button>
-        <button id="Fish" onclick="clickFishf()">Fisk
+        <button id="Fish" onclick="fishView()">Fisk
             <img class="fishypic" src="./Images/FishBtn.png">
         </button>  <br/>
-        <button id="RegisterNewFind" onclick="registerNewFindf()">Registrer nytt funn
+        <button id="RegisterNewFind" onclick="registerViewF()">Registrer nytt funn
         <img class="registerPlus" src="./Images/Register.png">
         </button>
    </div> `;
@@ -64,21 +64,3 @@ function openProfile() {
     backToProfile();
     profileView();
 }
-
-function clickBerriesf() {
-    berryView();
-}
-
-function clickMushroomsf() {
-    mushroomView();
-}
-
-function clickFishf() {
-    fishView();
-}
-function registerNewFindf() {
-    registerViewF();
-}
-function mainToLogIn() {
-    logInView()
-};
