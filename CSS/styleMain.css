@@ -14,7 +14,7 @@
 }
 
 #mainContainer {
-    height: 97vh;
+    height: 90vh;
     width: 99vw;
     background-image: url("../Images/Harvest-logo.png");
     background-repeat: no-repeat;
@@ -30,7 +30,7 @@
 }
 
 li {
-    pointer-events: none;
+    /* pointer-events: none; */
 }
 
 li>img {
@@ -163,10 +163,11 @@ li>img {
 }
 
 .search-box {
-    width: 600px;
+    
+    width: 300px;
     background: #e9f3ff;
     border-radius: 5px;
-    margin: 100px auto 0;
+    margin: 10px auto 0;
 }
 .row {    
     display: grid;
@@ -186,13 +187,13 @@ input {
 
 #Search {
     background: transparent;
-    border: 1px solid;
+    border:none;
     width: 40px;
     margin-left: 250px;
     position: absolute;
     outline: 0;
     cursor: pointer;
-    ;
+    
 }
 
 .mushyPic {
@@ -224,7 +225,7 @@ button .fa-solid {
 }
 
 .result-box ul {
-    border-top: 3px solid lavender;
+    border-bottom: 3px lavender;
     padding: 15px 10px;
     background-color: darkslategray;
 }
@@ -238,12 +239,14 @@ button .fa-solid {
 }
 
 .result-box ul li:hover {
-    background: #e9f3ff;
+    background: cadetblue
 }
 
 .result-box {
     max-height: 300px;
     overflow-y: scroll;
+    background: none;
+    background-color: darkslategray;
 }
 
 .registerPlus {
@@ -275,8 +278,4 @@ button .fa-solid {
     position: relative;
     z-index: 4;
     box-shadow: 1px 1px orangered;
-}
-#input-box {
-    align-items: center;
-    position: absolute;
 }
