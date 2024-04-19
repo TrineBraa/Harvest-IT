@@ -4,14 +4,26 @@
 function registerViewF(){
     document.getElementById("app").innerHTML = /*html*/`
     <button onclick="mainPageView()" class="mainPageBtn">Gå tilbake til forsiden</button>
-    <div>Here you can register your finds</div>
+    <h1>Registrer nytt funn</h1>
+    <br/>
+    <br/>
 
-    <div>
-        Navn <input type="text">
-        Dato funnet <input type="date">
-        Sted funnet <input type="text">
-
+        Navn <input type="text" placeholder="Hva du har funnet"><br/>
+        Dato funnet <input type="date"><br/>
+        Sted funnet <input type="text"><br/>
+        Kategori <select name="Kategorier">
+            <option value="berry">Bær</option>
+            <option value="mushroom">Sopp</option>
+            <option value="fish">Fisk</option>
+        </select>
         Bilde <input type="file"> <!-- BONUS (?) --->
-    </div>
+
+    <br/>
+    <button onclick="addNewFind()">Registrer</button>
     `;
+}
+
+
+function addNewFind(){
+
 }
