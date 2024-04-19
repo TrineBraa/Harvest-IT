@@ -1,5 +1,7 @@
 #sliderContainer {
     width: 500px;
+    position: relative;
+    z-index: 2;
 }
 
 .slider {

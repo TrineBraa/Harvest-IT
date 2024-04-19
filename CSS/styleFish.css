@@ -6,6 +6,8 @@
     width: 100%;
     cursor: pointer;
     height: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .infoParagraph { /* denne brukes på alle paragrafene om bær/fisk/sopp (de med <p>-tag) */

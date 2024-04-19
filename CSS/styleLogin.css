@@ -20,6 +20,8 @@
     width: 300px;
     margin: 4px;
     border-bottom: 1px solid black;
+    position: relative;
+    z-index: 2;
 }
 
 #mushroomLogin {
@@ -46,5 +48,6 @@
 }
 
 #logInInputContainer{
-    pointer-events: none;
+    position: relative;
+    z-index: -2;
 }

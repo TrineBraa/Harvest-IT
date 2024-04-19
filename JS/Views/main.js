@@ -63,13 +63,13 @@ function selectInput(item) {
     console.log(item);
     switch (item) {
         case "Fisk":
-            clickFishf();
+            fishView();
             break;
         case "Bær":
-            clickBerriesf();
+            berryView();
             break;
         case "Sopp":
-            clickMushroomsf();
+            mushroomView();
             break;
         case "Profil":
             openProfile();
