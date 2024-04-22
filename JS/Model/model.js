@@ -48,7 +48,7 @@ const model = {
             { 
                 id: 'Linn',
                 email: 'linn@gmail.com',
-                tlf: '',
+                tlf: '111 11 111',
                 adress: 'Linn Linnsens gate 1, 1111 Larvik',
                 password: 'Linn',
                 friends: ['Trine', 'Audun S', 'Even'],
@@ -69,7 +69,7 @@ const model = {
                 tlf: '',
                 adress: '',
                 password: 'Audun S',
-                friends: [],
+                friends: ["Even", "Trine"],
                 profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1230063579357773824/IMG_0226.JPG?ex=6631f4fa&is=661f7ffa&hm=09a69f04284a789e840d11ba3b78be7f719b82406d0a5bc0376e354c7694ae64&',
             },
             { 

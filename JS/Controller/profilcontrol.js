@@ -5,7 +5,6 @@ function viewProfile(id){
 }
 
 function returnOwnProfile(){
-    backToProfile();
-    let html = `<div id="closeButton"><button id="returnButton" onclick="profileView()">X</button></div>`;
+    let html = `<div id="closeButton"><div id="returnButton" onclick="viewProfile('${model.app.loggedInUser}')">X</div></div>`;
     return html;
 }

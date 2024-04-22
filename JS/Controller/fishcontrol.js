@@ -1,4 +1,4 @@
 function returnButtonFish(){
-    let html = `<div id="closeButton"><button id="returnButton" onclick="fishView()">X</button></div>`;
+    let html = `<div id="closeButton"><div id="returnButton" onclick="fishView()">X</div></div>`;
     return html;
 }
