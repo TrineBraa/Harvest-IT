@@ -43,5 +43,11 @@ function returnButtonMain(){
 
 
 function backToProfile(){
-    model.app.profileToVisit = model.app.loggedInUser
+    model.app.profileToVisit = model.app.loggedInUser;
+}
+
+function addDarkMode (){ // view eller controller funksjon?
+    let element = document.body;
+    element.classList.toggle("darkMode");
+    mainPageView();
 }

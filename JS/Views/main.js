@@ -5,6 +5,7 @@ function mainPageView() {
    </b> </em>
     <button onclick="openProfile()" id="Profile"><i class="fa-sharp fa-solid fa-user"></i><br/>${model.app.loggedInUser}</button>
     <button id="logOut" onclick="logOut()"><i class="fa-sharp fa-solid fa-key"></i>Logg ut</button>
+    <button class="darkModeBtn" onclick="addDarkMode()">Dark/light Mode</button>
     <div id="mainContainer">
         <div class="search-box">
             <div class="row">

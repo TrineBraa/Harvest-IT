@@ -10,7 +10,7 @@
     margin: 2px;
     overflow: scroll;
     overflow-x: hidden;
-    background-color: rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #earnedBadges{
@@ -19,7 +19,7 @@
     margin: 2px;
     overflow: scroll;
     overflow-x: hidden;
-    background-color: rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #nextBadge{
@@ -28,7 +28,7 @@
     margin: 2px;
     overflow: scroll;
     overflow-x: hidden;
-    background-color: rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #registrationsDone{
@@ -37,11 +37,11 @@
     margin: 2px;
     overflow: scroll;
     overflow-x: hidden;
-    background-color: rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #Profiltitle{
-    background-color: rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #profileBoxContainer {
@@ -54,22 +54,23 @@
     height: 100px;
     border-radius: 0%;
     object-fit: contain;
-    background-color:  rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 .friend{
     cursor: pointer;
-    background-color:  rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
 }
 
 #userProfiles{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color:  rgb(77, 133, 135);
+    background-color: color(from body cadetblue);
     text-align: center;
 }
 
 #shownFriends{
     margin: 2px;
 }
+

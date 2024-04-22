@@ -7,19 +7,18 @@ function logInView(){
         <br/>
         <br/>
         <div id="logInInputContainer">
-            <label of="loginEmail">E-post</label>
-            <input id="loginEmail" class="loginInput" type="email" oninput="model.inputs.loginInputs.email=this.value" value="${model.inputs.loginInputs.email ?? ''}" placeholder="E-mail" required/>
+            <label of="loginEmail">E-mail</label>
+            <input id="loginEmail" class="loginInput" type="email" oninput="model.inputs.loginInputs.email=this.value" value="${model.inputs.loginInputs.email ?? ''}" required/>
             <br/>
             <label of="loginPass">Passord</label>
-            <input id="loginPass" class="loginInput" type="password" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" placeholder="Passord" required>
+            <input id="loginPass" class="loginInput" type="password" oninput="model.inputs.loginInputs.password=this.value" value="${model.inputs.loginInputs.password ?? ''}" required>
             <br/>
             <span class="errorLoggin">${model.inputs.loginInputs.errorMsg}</span>
         </div>
         <br/>
+        <button class="loginButton" onclick="logIn()">Logg inn</button>
         <br/>
-        <button class="loginButton" onclick="logIn()">Logg Inn</button>
-        <br/>
-        <button class="loginButton" onclick="newUserView()">Registrer Ny Bruker</button>
+        <button class="loginButton" onclick="newUserView()">Registrer ny bruker</button>
         <br/>
     </div>
     `;
