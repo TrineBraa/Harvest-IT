@@ -3,7 +3,7 @@
 //placholder
 function registerViewF(){
     document.getElementById("app").innerHTML = /*html*/`
-    <button onclick="mainPageView()" class="mainPageBtn">Gå tilbake til forsiden</button>
+    <div onclick="mainPageView()" class="trineAndLisasReallyCoolButton">Gå tilbake til forsiden</div>
     <h1>Registrer nytt funn</h1>
     <br/>
     <br/>
@@ -19,7 +19,7 @@ function registerViewF(){
         Bilde <input type="file"> <!-- BONUS (?) --->
 
     <br/>
-    <button onclick="addNewFind()">Registrer</button>
+    <div class="trineAndLisasReallyCoolButton" onclick="addNewFind()">Registrer</div>
     `;
 }
 

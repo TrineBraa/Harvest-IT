@@ -14,7 +14,7 @@ function profileView(){
     </div>
     ${user.id == model.app.loggedInUser ? '' : `${returnOwnProfile()}`}
 
-        <button onclick="mainPageView()" class="mainPageBtn">Gå tilbake til forsiden</button>
+        <div onclick="mainPageView()" class="trineAndLisasReallyCoolButton">Gå tilbake til forsiden</div>
     <div id="profileBoxContainer">
         <div id="friendsContainer">
             <h3 id="Profiltitle">Venner</h3>

@@ -92,5 +92,7 @@ function openProfile() {
 
 function logOut(){
     model.app.loggedInUser = null;
+    let element = document.body;
+    element.classList.remove("darkMode");
     logInView()
 }

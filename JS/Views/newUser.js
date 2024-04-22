@@ -15,9 +15,9 @@ function newUserView () {
     <input class="newUser" id="newPassword" type="password" placeholder="Passord" oninput="model.inputs.registerUser.password=this.value" value="${model.inputs.registerUser.password ?? ''}">
 
     <br/>
-    <button class="newUserButton" onclick="registerUser(id)">Opprett ny bruker</button>
+    <div class="trineAndLisasReallyCoolButton" onclick="registerUser(id)">Opprett ny bruker</div>
     <br/>
-    <button class="newUserButton" onclick="logInView()">Tilbake til logg inn</button>
+    <div class="trineAndLisasReallyCoolButton" onclick="logInView()">Tilbake til logg inn</div>
     </div>
     
     `;

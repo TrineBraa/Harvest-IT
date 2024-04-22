@@ -20,7 +20,6 @@ body{
 .darkMode{
     background-color: rgb(6, 50, 6);
     color: white;
-    
 }
 
 
@@ -163,12 +162,16 @@ li>img {
     top: 15px;
     right: 25px;
     cursor: pointer;
+    background-color: color(from body cadetblue);    
+    color: color(from body white);
 }
 
 #returnButton:hover {
-    border: 2px solid black;
-    background-color: rgb(26, 174, 174);
+    background-color: white;
+    color: black;
 }
+
+
 
 .fishypic {
     height: 25px;

@@ -16,9 +16,9 @@ function logInView(){
             <span class="errorLoggin">${model.inputs.loginInputs.errorMsg}</span>
         </div>
         <br/>
-        <button class="loginButton" onclick="logIn()">Logg inn</button>
+        <div class="trineAndLisasReallyCoolButton" onclick="logIn()">Logg inn</div>
         <br/>
-        <button class="loginButton" onclick="newUserView()">Registrer ny bruker</button>
+        <div class="trineAndLisasReallyCoolButton" onclick="newUserView()">Registrer ny bruker</div>
         <br/>
     </div>
     `;
