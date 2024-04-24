@@ -1,18 +1,30 @@
-#found {
-font-weight: bolder;
+#Categories {
+font-weight: bold;
+background-color: orangered;
+border: none;
+}
+
+#addNewFindButton {
+    font-size: 125%;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 100px;
+    border: none;
+    cursor: pointer;
+    background-color:gold;
+    text-shadow: 2ox 2ox 2ox black;
+    
 }
 
 #dateFound {
-font-weight: bold;
-}
-
-#spotFound {
     font-weight: bold;
 }
 
-#Categories {
+#foundSpecies {
     font-weight: bold;
 }
 
-
-
+#finds {
+    font-weight: bold;
+}

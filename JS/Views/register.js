@@ -1,15 +1,20 @@
-
+let = foundThing = {
+    Species: [""],
+    date: [""],
+    place: [""]
+}
+registerViewF()
 function registerViewF(){
     document.getElementById("app").innerHTML = /*html*/`
-    <div onclick="mainPageView()" class="trineAndLisasReallyCoolButton">Gå tilbake til forsiden</div>
-    <h1>Registrer nytt funn</h1>
+    <button onclick="mainPageView()" class="mainPageBtn">Gå tilbake til forsiden</button>
+    <b><h1>Registrer nytt funn</h1></b>
     <br/>
     <br/>
 
-        Navn <input onchange="setSightingName(this.value)" type="text" id="found" placeholder="Hva du har funnet"><br/>
-        Dato funnet <input onchange="setSightingDate(this.value)" id="dateFound" type="date"><br/>
-        Sted funnet <input onchange="setSightingLocation(this.value)" id="spotFound" type="text"><br/>
-        Kategori <select onchange="setSightingCategory(this.value)" name="Kategorier" id="Categories">
+        Navn <input type="text" id="finds" placeholder="Hva du har funnet"><br/>
+        Dato funnet <input id="dateFound" type="date"><br/>
+        Sted funnet <input id="foundSpecies" type="text"><br/>
+        Kategori <select name="Kategorier" id="Categories">
             <option value="berry">Bær</option>
             <option value="mushroom">Sopp</option>
             <option value="fish">Fisk</option>

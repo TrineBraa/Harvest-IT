@@ -1,6 +1,6 @@
 const model = {
     app: {
-        loggedInUser: '',
+        loggedInUser: 'Linn',
         profileToVisit: '',
         darkMode: false,
         lang: 'no',
