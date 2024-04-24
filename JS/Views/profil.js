@@ -25,7 +25,7 @@ function profileView(){
         <br/>
         <div id="earnedBadges">
             <h3 id="Profiltitle">Tjente medaljer</h3>
-                ${drawBadges()}
+                ${makeBadgesHtml()}
         </div>
         <br/>
         ${user.id == model.app.loggedInUser ? makeNextBadgeHtml() : ''}
@@ -64,12 +64,19 @@ function makeFriendsListHtml(){
 }
 
 
-function drawBadges(){
-    return `<img class="badge" src="./Images/soppbadge.png">
-            <img class="badge" src="./Images/fishbadge.png">
-            <img class="badge" src="./Images/berrybadge.png">
-        `
+function makeBadgesHtml(){
+    let user = model.data.users.find((u) => u.id == model.app.profileToVisit);
+    let html = '';
+    if(user.badges.length == 0) return html
+    for (let i = 0 ; i < user.badges.length ; i++){
+        html += /*HTML*/`
+        <img class="badge" src="${model.data.badges[user.badges[i]].img}">
+
+        `;
+    }
+    return html;
 }
+
 
 // function friendProfile(){
 //     let user = model.data.users.find((u) => u.id == model.app.profileToVisit)
