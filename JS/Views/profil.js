@@ -42,6 +42,7 @@ function profileView(){
 function makeNextBadgeHtml(){
 return `<div id="nextBadge">
             <h3 id="Profiltitle">Neste Medalje</h3>
+            <div>${makeUpcomingBadges()}</div>
         </div>`
 }
 
@@ -77,6 +78,17 @@ function makeBadgesHtml(){
     return html;
 }
 
+function makeUpcomingBadges(){
+    let user = model.data.users.find((u) => u.id == model.app.profileToVisit);
+    let html = '';
+    if(user.upcomingBadges.length == 0) return html
+    for (let i = 0 ; i < user.upcomingBadges.length ; i++){
+        html += /*HTML*/`
+        <img class="badge" src="${model.data.upcomingBadges[user.upcomingBadges[i]].img}">
+        `;
+    }
+    return html;
+}
 
 // function friendProfile(){
 //     let user = model.data.users.find((u) => u.id == model.app.profileToVisit)

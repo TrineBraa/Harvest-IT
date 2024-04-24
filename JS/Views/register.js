@@ -25,8 +25,11 @@ function registerViewF(){
 
 function addNewFind(){
     model.data.sightings.push(model.inputs.registerSighting)
-    if (!sightings.name || !sightings.category || !sightings.lastHarvest || !sightings.location) {
-        sightings.errorMsg = 'Feltene kan ikke være tomme';
+    const register = model.inputs.registerSighting;
+    if (!register.nameInput || !register.category || !register.lastHarvestInput || !register.locationInput) {
+        register.errorMsg = 'Feltene kan ikke være tomme';
+        registerViewF();
+        return
     }
     model.inputs.registerSighting = {}
     

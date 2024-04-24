@@ -39,6 +39,7 @@ const model = {
             category: '',
             locationInput: '',
             imageInput: '',
+            errorMsg: '',
         },
         findingsPage: { 
             locationBar: '',
@@ -46,9 +47,15 @@ const model = {
     },
     data: {
         badges: [
-            {name: 'Første soppen', img: '/Images/soppbadge.png'},
-            {name: 'Første fisken', img: '/Images/fishbadge.png'},
-            {name: 'Første bæret', img: '/Images/berrybadge.png'},
+            {name: 'Første soppen', img: './Images/mushroombadge.png'},
+            {name: 'Første fisken', img: './Images/fishbadge.png'},
+            {name: 'Første bæret', img: './Images/berrybadge.png'},
+        ],
+        upcomingBadges: [
+            {name: '5 Fisk', img: './Images/fivefishbadge.png'},
+            {name: '5 sopp', img: './Images/fivemushroombadge.png'},
+            {name: '5 bær', img: './Images/fiveberrybadge.png'},
+            
         ],
         users: [
             { 
@@ -59,6 +66,7 @@ const model = {
                 password: 'Linn',
                 friends: ['Trine', 'Audun S', 'Even'],
                 badges: [0,1,2],
+                upcomingBadges: [0,1,2],
                 profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1227905664626720790/image.png?ex=662a1b43&is=6617a643&hm=7a414d53f53b6feb5297cfe48264da70cc5b72101cff736efdfdb881bb648f3a&',
             },
             { 
@@ -69,6 +77,7 @@ const model = {
                 password: 'Trine',
                 friends: ["Linn", "Audun S"],
                 badges: [2],
+                upcomingBadges: [2],
                 profilePic: './Images/Trine.jpg', 
             },
             { 
@@ -79,6 +88,7 @@ const model = {
                 password: 'Audun S',
                 friends: ["Even", "Trine"],
                 badges: [0,1,2],
+                upcomingBadges: [0,1,2],
                 profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1230063579357773824/IMG_0226.JPG?ex=6631f4fa&is=661f7ffa&hm=09a69f04284a789e840d11ba3b78be7f719b82406d0a5bc0376e354c7694ae64&',
             },
             { 
@@ -89,6 +99,7 @@ const model = {
                 password: 'Even',
                 friends: ["Linn", "Audun S"],
                 badges: [1],
+                upcomingBadges: [1],
                 profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1227905106540892231/IMG_0025.jpg?ex=662a1abe&is=6617a5be&hm=c2ba864cb2ee1ba1aa30aa7eb8bba044983a14552d4701a51c3b3ab5909c2f8f&',
             }, 
         ],
@@ -100,7 +111,7 @@ const model = {
                 lastHarvest: '2024-10-22',
                 location: 'blåbærskogen i Tønsberg', 
                 image: '', 
-                foundBy: 'Linn'
+                foundBy: 'Linn',
             },
         ],
         categories: [
