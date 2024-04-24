@@ -1,5 +1,6 @@
 // Register findings CONTROLLER
-
+ const sightings = model.data.sightings;
+ 
 function setSightingName(input){
     model.inputs.registerSighting.nameInput = input
 }

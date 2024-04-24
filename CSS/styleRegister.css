@@ -1,6 +1,6 @@
 #Categories {
 font-weight: bold;
-background-color: orangered;
+background-color: ghostwhite;
 border: none;
 }
 
@@ -12,7 +12,7 @@ border: none;
     min-width: 100px;
     border: none;
     cursor: pointer;
-    background-color:gold;
+    background-color:goldenrod;
     text-shadow: 2ox 2ox 2ox black;
     
 }

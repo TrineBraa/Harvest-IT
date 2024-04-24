@@ -17,6 +17,7 @@ function registerViewF(){
 
     <br/>
     <div class="trineAndLisasReallyCoolButton" onclick="addNewFind()" id="addNewFindButton">Registrer</div>
+    <span class="errorLoggin">${model.inputs.registerSighting.errorMsg}</span>
     `;
 }
 
@@ -24,9 +25,14 @@ function registerViewF(){
 
 function addNewFind(){
     model.data.sightings.push(model.inputs.registerSighting)
+    if (!sightings.name || !sightings.category || !sightings.lastHarvest || !sightings.location) {
+        sightings.errorMsg = 'Feltene kan ikke være tomme';
+    }
     model.inputs.registerSighting = {}
-    mainPageView();
+    
 }
+
+
 
 
 // function pushSpecies(found, value){
