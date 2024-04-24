@@ -4,7 +4,7 @@ const model = {
         profileToVisit: '',
         darkMode: false,
         lang: 'no',
-        currentPage: 'mainPage',
+        currentPage: 'registerFindingsPage',
         page: [
             'loginPage',
             'mainPage',
@@ -36,6 +36,7 @@ const model = {
         registerSighting: {
             nameInput: '',
             lastHarvestInput: '',
+            category: '',
             locationInput: '',
             imageInput: '',
         },
