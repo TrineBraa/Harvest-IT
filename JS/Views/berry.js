@@ -4,7 +4,7 @@ function berryView() {
     <h2>Bær</h2>
     ${returnButtonMain()}
     <div id="sliderContainer">
-    <span>Avstand fra din lokasjon: <p id="sliderValue">${showSliderValue()}</p></span>
+    <span>Avstand fra din lokasjon: </p></span>
     <br/>
     <br/>
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">

@@ -25,6 +25,7 @@ function profileView(){
         <br/>
         <div id="earnedBadges">
             <h3 id="Profiltitle">Tjente medaljer</h3>
+                ${drawBadges()}
         </div>
         <br/>
         ${user.id == model.app.loggedInUser ? makeNextBadgeHtml() : ''}
@@ -62,6 +63,13 @@ function makeFriendsListHtml(){
     return html;
 }
 
+
+function drawBadges(){
+    return `<img class="badge" src="./Images/soppbadge.png">
+            <img class="badge" src="./Images/fishbadge.png">
+            <img class="badge" src="./Images/berrybadge.png">
+        `
+}
 
 // function friendProfile(){
 //     let user = model.data.users.find((u) => u.id == model.app.profileToVisit)

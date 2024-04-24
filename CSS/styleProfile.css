@@ -1,7 +1,7 @@
 
 #smileyface {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 
 #friendsContainer{
@@ -14,7 +14,7 @@
 }
 
 #earnedBadges{
-    height: 150px;
+    height: 250px;
     width: 500px;
     margin: 2px;
     overflow: scroll;
@@ -29,6 +29,11 @@
     overflow: scroll;
     overflow-x: hidden;
     background-color: color(from body cadetblue);
+}
+
+.badge{
+    height: 150px;
+    width: auto;
 }
 
 #registrationsDone{

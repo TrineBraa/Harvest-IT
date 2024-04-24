@@ -1,7 +1,7 @@
 const model = {
     app: {
         loggedInUser: 'Linn',
-        profileToVisit: '',
+        profileToVisit: 'Linn',
         darkMode: false,
         lang: 'no',
         currentPage: 'registerFindingsPage',
