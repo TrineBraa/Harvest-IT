@@ -48,6 +48,7 @@ return `<div id="nextBadge">
 function makeFriendsListHtml(){
     let user = model.data.users.find((u) => u.id == model.app.profileToVisit)
     let html = '';
+    if(user.friends.length == 0) return html
     for (let i = 0 ; i < user.friends.length ; i++){
         let friend = model.data.users.find((f) => f.id == user.friends[i])
         html += /*HTML*/`

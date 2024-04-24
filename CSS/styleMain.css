@@ -84,6 +84,7 @@ li>img {
     border: 2px solid black;
     background-image: none;
     z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #Mushrooms {
@@ -104,6 +105,7 @@ li>img {
     border: 2px solid black;
     background-image: none;
     z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #Fish {
@@ -124,6 +126,7 @@ li>img {
     border: 2px solid black;
     background-image: none;
     z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #RegisterNewFind {
@@ -143,6 +146,7 @@ li>img {
     border: 2px solid black;
     background-image: none;
     z-index: 2;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .iicon {
@@ -156,7 +160,7 @@ li>img {
 
 #returnButton {
     border: none;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: x-large;
     position: fixed;
     top: 15px;
