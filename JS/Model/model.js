@@ -1,10 +1,10 @@
 const model = {
     app: {
-        loggedInUser: 'Linn',
-        profileToVisit: 'Linn',
+        loggedInUser: '',
+        profileToVisit: '',
         darkMode: false,
         lang: 'no',
-        currentPage: 'profilePage',
+        currentPage: 'loginPage',
         page: [
             'loginPage',
             'mainPage',

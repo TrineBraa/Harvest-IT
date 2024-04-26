@@ -58,7 +58,6 @@ function makeFriendsListHtml(){
                 <div class="friend">${friend.id}</div>
                 <img class="friendProfilePic" src="${friend.profilePic}"/>
             </div>
-
         `;
     }
     return html;
