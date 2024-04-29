@@ -89,7 +89,7 @@ const model = {
                 friends: ["Even", "Trine"],
                 badges: [0,1,2],
                 upcomingBadges: [0,1,2],
-                profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1230063579357773824/IMG_0226.JPG?ex=6631f4fa&is=661f7ffa&hm=09a69f04284a789e840d11ba3b78be7f719b82406d0a5bc0376e354c7694ae64&',
+                profilePic: '.Images/Audun-S.jpg',
             },
             { 
                 id: 'Even', 
