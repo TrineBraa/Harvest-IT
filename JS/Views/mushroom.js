@@ -1,4 +1,25 @@
 //placeholder
+
+function mushroomMapView(){
+    
+    mushroomMapHTML = /*HTML*/`
+    <div id="map" class="map">
+        <div class="mapButtons">
+            <img id="locationImg" src="images/arrowgrey.png" onclick="showLocation()">
+        </div>
+        <div>
+            <img id="fullScreen" onclick="fullScreen()" src="images/fullScreen.svg">
+        </div>
+    </div>
+    `;
+    
+    document.getElementById("mushroomMap").innerHTML = mushroomMapHTML
+    
+    createMap()
+    showMushroom()
+    fullScreenMap = document.getElementById("mushroomMap")
+}
+
 function mushroomView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     <h2>Sopp</h2>
@@ -10,19 +31,20 @@ function mushroomView() {
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
     <br/>
-    <div id="mapContainer">
-        KartPlacement
+    <div id="mushroomMap">
     </div>
-     <br/>
-     <br/>
+    <br/>
+    <br/>
     
-     <h3>Registrerte Sopp:</h3>
+    <h3>Registrerte Sopp:</h3>
     <ul id= "listedFinds">
-       <li>Kantarell <img src="./Images/iicon.png" class="iicon" onclick="chanterelleInfoView()"></li> 
-       <li>Steinsopp <img src="./Images/iicon.png" class="iicon" onclick="pennyBunInfoView()"></li> 
-       <li>Sjampinjong <img src="./Images/iicon.png" class="iicon" onclick="AgaricusInfoView()"></li> 
+    <li>Kantarell <img src="./Images/iicon.png" class="iicon" onclick="chanterelleInfoView()"></li> 
+    <li>Steinsopp <img src="./Images/iicon.png" class="iicon" onclick="pennyBunInfoView()"></li> 
+    <li>Sjampinjong <img src="./Images/iicon.png" class="iicon" onclick="AgaricusInfoView()"></li> 
     </ul>
     `;
+    mushroomMapView()
+    fullScreen()
 }
 
 function chanterelleInfoView(){

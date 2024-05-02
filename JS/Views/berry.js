@@ -1,4 +1,25 @@
 //placeholder
+
+function berryMapView(){
+    
+    berryMapHTML = /*HTML*/`
+    <div id="map" class="map">
+        <div class="mapButtons">
+            <img id="locationImg" src="images/arrowgrey.png" onclick="showLocation()">
+        </div>
+        <div>
+            <img id="fullScreen" onclick="fullScreen()" src="images/fullScreen.svg">
+        </div>
+    </div>
+    `;
+    
+    document.getElementById("berryMap").innerHTML = berryMapHTML
+    
+    createMap()
+    fullScreenMap = document.getElementById("berryMap")
+    showBerry()
+}
+
 function berryView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     <h2>Bær</h2>
@@ -10,8 +31,7 @@ function berryView() {
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
     <br/>
-    <div id="mapContainer">
-        KartPlacement
+    <div id="berryMap">
     </div>
      <br/>
      <br/>
@@ -23,6 +43,8 @@ function berryView() {
        <li>Bringebær <img src="./Images/iicon.png" class="iicon" onclick="raspberryInfoView()"></li> 
     </ul>
     `;
+    berryMapView()
+    fullScreen()
 }
 
 function wildStrawberryInfoView(){ 

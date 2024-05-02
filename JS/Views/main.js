@@ -48,6 +48,8 @@ function mainPageView() {
         }
 
     };
+    map.off('click', addMarkerOnClick);
+    marker = null
 
 }
 

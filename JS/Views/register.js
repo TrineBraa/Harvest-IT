@@ -1,3 +1,26 @@
+
+function registerView(){
+    
+    mapHTML = /*HTML*/`
+    <div id="map" class="map">
+        <div class="mapButtons">
+            <img id="locationImg" src="images/arrowgrey.png" onclick="showLocation()">
+            <img id="addMarkerImg" onclick="addMarker()" src="images/buttonMarkerGrey.svg">
+        </div>
+        <div>
+            <img id="fullScreen" onclick="fullScreen()" src="images/fullScreen.svg">
+        </div>
+    </div>
+    `;
+    
+    document.getElementById("mapRegister").innerHTML = mapHTML
+    selectMarker = "berry"
+    createMap()
+    fullScreenMap = document.getElementById("mapRegister")
+    selectMark()
+    
+}
+
 function registerViewF(){
     document.getElementById("app").innerHTML = /*html*/`
     <div onclick="mainPageView()" class="trineAndLisasReallyCoolButton">Gå tilbake til forsiden</div>
@@ -18,7 +41,11 @@ function registerViewF(){
     <br/>
     <div class="trineAndLisasReallyCoolButton" onclick="addNewFind()" id="addNewFindButton">Registrer</div>
     <span class="errorLoggin">${model.inputs.registerSighting.errorMsg}</span>
+    <div id="mapRegister" class="mapRegister2">
     `;
+    registerView()
+    fullScreen()
+
 }
 
 
@@ -26,13 +53,27 @@ function registerViewF(){
 function addNewFind(){
     model.data.sightings.push(model.inputs.registerSighting)
     const register = model.inputs.registerSighting;
-    if (!register.nameInput || !register.category || !register.lastHarvestInput || !register.locationInput) {
+    if (!register.nameInput || !register.lastHarvestInput || !register.locationInput) {
         register.errorMsg = 'Feltene kan ikke være tomme';
         registerViewF();
         return
+    } else if(!marker){
+        register.errorMsg = 'Du må plassere markør på kartet';
+        registerViewF();
+        return
     }
-    model.inputs.registerSighting = {}
+    //model.inputs.registerSighting = {}
     
+    let messageDiv = document.createElement('div');
+    messageDiv.textContent = 'Takk! Ditt funn er registrert.';
+    messageDiv.classList.add('registration-message');
+    document.body.appendChild(messageDiv);
+    
+    setTimeout(() => {
+        document.body.removeChild(messageDiv);
+        mainPageView()
+    }, 3000);
+    registerMarker()
 }
 
 

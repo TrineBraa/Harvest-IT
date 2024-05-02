@@ -1,4 +1,24 @@
 //placeholder
+function fishMapView(){
+    
+    fishMapHTML = /*HTML*/`
+    <div id="map" class="map">
+        <div class="mapButtons">
+            <img id="locationImg" src="images/arrowgrey.png" onclick="showLocation()">
+        </div>
+        <div>
+            <img id="fullScreen" onclick="fullScreen()" src="images/fullScreen.svg">
+        </div>
+    </div>
+    `;
+    
+    document.getElementById("fishMap").innerHTML = fishMapHTML
+    
+    createMap()
+    fullScreenMap = document.getElementById("fishMap")
+    showFish()
+}
+
 function fishView() {
     document.getElementById('app').innerHTML = /*HTML*/ `
     
@@ -11,8 +31,7 @@ function fishView() {
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
     </div>
     <br/>
-    <div id="mapContainer">
-        KartPlacement
+    <div id="fishMap">
     </div>
      <br/>
      <br/>
@@ -24,7 +43,11 @@ function fishView() {
        <li>Torsk <img src="./Images/iicon.png" class="iicon" onclick="codInfoView()"></li> 
     </ul>
     `;
+    fishMapView()
+    fullScreen()
 }
+
+
 
 function salmonInfoView () {
     document.getElementById('app').innerHTML = /*HTML*/ `
