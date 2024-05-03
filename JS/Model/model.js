@@ -89,7 +89,7 @@ const model = {
                 friends: ["Even", "Trine"],
                 badges: [0,1,2],
                 upcomingBadges: [0,1,2],
-                profilePic: '.Images/Audun-S.jpg',
+                profilePic: '.Images/Audun.jpg',
             },
             { 
                 id: 'Even', 
