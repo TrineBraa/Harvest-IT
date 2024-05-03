@@ -67,7 +67,7 @@ const model = {
                 friends: ['Trine', 'Audun S', 'Even'],
                 badges: [0,1,2],
                 upcomingBadges: [0,1,2],
-                profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1227905664626720790/image.png?ex=662a1b43&is=6617a643&hm=7a414d53f53b6feb5297cfe48264da70cc5b72101cff736efdfdb881bb648f3a&',
+                profilePic: './Images/Linn.jpg',
             },
             { 
                 id: 'Trine',
@@ -100,7 +100,7 @@ const model = {
                 friends: ["Linn", "Audun S"],
                 badges: [1],
                 upcomingBadges: [1],
-                profilePic: 'https://cdn.discordapp.com/attachments/1224687340065390634/1227905106540892231/IMG_0025.jpg?ex=662a1abe&is=6617a5be&hm=c2ba864cb2ee1ba1aa30aa7eb8bba044983a14552d4701a51c3b3ab5909c2f8f&',
+                profilePic: './images/Even.jpg',
             }, 
         ],
         sightings: [
