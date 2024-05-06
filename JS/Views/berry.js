@@ -18,6 +18,7 @@ function berryMapView(){
     createMap()
     fullScreenMap = document.getElementById("berryMap")
     showBerry()
+    sliderZoomer()
 }
 
 function berryView() {
@@ -25,10 +26,9 @@ function berryView() {
     <h2>Bær</h2>
     ${returnButtonMain()}
     <div id="sliderContainer">
-    <span>Avstand fra din lokasjon: </p></span>
+    <span>Avstand fra din lokasjon: <span id="distanceDisplay"></span></span>    <br/>
     <br/>
-    <br/>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
     </div>
     <br/>
     <div id="berryMap">
@@ -45,6 +45,55 @@ function berryView() {
     `;
     berryMapView()
     fullScreen()
+    resetMarkerRadius()
+}
+
+function sliderZoomer(){
+    slider = document.getElementById("myRange");
+    var distanceDisplay = document.getElementById("distanceDisplay");
+    var sliderMoved = false;
+
+    slider.disabled = true;
+
+    slider.addEventListener("input", function() {
+        if (enabled) {
+            var distance = parseInt(this.value);
+            if(distance <= 9){
+                displayText = distance * 100 + " meters"
+            } else{
+                displayText = (distance / 10) + " km"
+            }
+            distanceDisplay.textContent = displayText;
+            updateMap(distance);
+            sliderMoved = true;
+        }
+    });
+}
+
+function updateMap(distance) {
+  
+
+    var radiusInMeters = distance * 100;
+    if (circleRad){
+        circleRad.setRadius(radiusInMeters)    
+    } else {
+        circleRad = L.circle([lat, lng], {
+            radius: radiusInMeters,
+            color: 'green',
+            opacity: 0.8,
+            fillOpacity: 0.1,
+            weight: 0.7,
+        }).addTo(map);
+    }
+
+    var bounds = circleRad.getBounds();
+
+    map.fitBounds(bounds);
+
+    if (lastCircle) {
+        map.removeLayer(lastCircle);
+    }
+
 }
 
 function wildStrawberryInfoView(){ 

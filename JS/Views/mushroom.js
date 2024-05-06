@@ -18,6 +18,7 @@ function mushroomMapView(){
     createMap()
     showMushroom()
     fullScreenMap = document.getElementById("mushroomMap")
+    sliderZoomer()
 }
 
 function mushroomView() {
@@ -25,10 +26,9 @@ function mushroomView() {
     <h2>Sopp</h2>
     ${returnButtonMain()}
     <div id="sliderContainer">
-    <span>Avstand fra din lokasjon</span>
+    <span>Avstand fra din lokasjon: <span id="distanceDisplay"></span></span>    <br/>    <br/>
     <br/>
-    <br/>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">
     </div>
     <br/>
     <div id="mushroomMap">
@@ -45,6 +45,7 @@ function mushroomView() {
     `;
     mushroomMapView()
     fullScreen()
+    resetMarkerRadius()
 }
 
 function chanterelleInfoView(){

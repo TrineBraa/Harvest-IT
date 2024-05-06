@@ -38,6 +38,7 @@ let availableKeywords = [
 
 function returnButtonMain(){
     let html = `<div id="closeButton"><div id="returnButton" onclick="mainPageView()">X</div></div>`;
+    resetMarkerRadius()
     return html;
 };
 

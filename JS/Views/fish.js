@@ -17,6 +17,8 @@ function fishMapView(){
     createMap()
     fullScreenMap = document.getElementById("fishMap")
     showFish()
+    sliderZoomer()
+    
 }
 
 function fishView() {
@@ -25,11 +27,10 @@ function fishView() {
     <h2>Fisk</h2>
     ${returnButtonMain()}
     <div id="sliderContainer">
-    <span>Avstand fra din lokasjon</span>
-    <br/>
-    <br/>
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    </div>
+    <span>Avstand fra din lokasjon: <span id="distanceDisplay"></span></span>    <br/>
+        <br/>
+        <br/>
+        <input type="range" min="1" max="1000" value="500" class="slider" id="myRange">    </div>
     <br/>
     <div id="fishMap">
     </div>
@@ -45,6 +46,7 @@ function fishView() {
     `;
     fishMapView()
     fullScreen()
+    resetMarkerRadius()
 }
 
 

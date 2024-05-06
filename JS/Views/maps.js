@@ -28,6 +28,13 @@ let fullScreenButton = document.getElementById("fullScreen")
 let markerImg = document.getElementById("addMarkerImg")
 let selectMarker;
 let isFirstClick = true;
+let circleRad;
+let lastCircle;
+let lat;
+let lng;
+let enabled = false
+
+
 
 
 function createMap(){
@@ -46,25 +53,65 @@ function createMap(){
     markerImg = document.getElementById("addMarkerImg")
     fullScreenButton = document.getElementById("fullScreen")
     fullScreenMap = document.getElementById("mapRegister")
+
 }
 
+function circleRadius(map, latitude, longitude, radius, existingCircle){
+    if(existingCircle instanceof L.circle){
+        existingCircle.setLatLng([latitude, longitude]).setRadius(radius);
+    } else {
+    existingCircle = L.circle([latitude, longitude], {
+        radius: 10000, // Radius in meters
+        color: 'green',
+        opacity: 0.8,
+        fillOpacity: 0.1,
+        weight: 0.7,
+    }).addTo(map);
+}
+
+    const bounds = existingCircle.getBounds();
+
+    map.fitBounds(bounds);
+    return existingCircle;
+}
 
 function showLocation(){
     noLocate()
     watchId = navigator.geolocation.watchPosition(success, error);
     locationImg.src = "Images/arrowg.png" 
+    enabled = true;
+    slider.disabled = false
 }
+
+function removeCircle() {
+   
+    if (circle) {
+        map.removeLayer(circle);
+        circle = null;
+    }
+}
+
+function resetMarkerRadius() {
+    if (circleRad) {
+        map.removeLayer(circleRad);
+        circleRad = null;
+    }
+}
+
 function noLocate(){
     if(watchId){
         navigator.geolocation.clearWatch(watchId)
         }
+        enabled = false;
 }
 
 
 
 function success(position){
-    const lat = position.coords.latitude
-    const lng = position.coords.longitude
+    lat = position.coords.latitude
+    lng = position.coords.longitude
+    const radius = ''
+    
     
     if (circle) {
         map.removeLayer(circle);
@@ -79,13 +126,15 @@ function success(position){
     }).addTo(map);
     
     circle.bindPopup("This is you.")
-    map.setView([lat, lng], 13)
+    map.setView([lat, lng])
     
     if(!zoomed){
         zoomed = map.setView([lat, lng], 13);
     }
     
-    
+    circle = circleRadius(map, lat, lng, radius, circle)
+    removeCircle()
+
 }
 
 function error(err){
@@ -201,7 +250,7 @@ function registerMarker(){
         
 }
 
-function hideAll(){
+/*function hideAll(){
 
     markers.berries.forEach(function(findInfo) {
         const marker = findInfo.marker;
@@ -231,7 +280,7 @@ function hideAll(){
         fullScreenMap.classList.remove("mapRegister")
         fullScreenMap.classList.add("mapRegister")
     }
-}
+}*/
 
 function selectMark(){
     mushroomsMarker()
@@ -295,3 +344,4 @@ function showMushroom(){
         findInfo.marker = newMarker;
     });
 }
+
